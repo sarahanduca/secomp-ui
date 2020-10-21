@@ -42,18 +42,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-div {
-  width: 100%;
-  height: 586px;
-}
-header {
-  padding-top: 37px;
-  margin: 0 auto;
-  width: 1366px;
-  height: 586px;
-  display: flex;
-  justify-content: space-between;
-  background-image: url(../assets/headerbg.svg);
-  background-repeat: no-repeat;
-}
+  div {
+    width: 100%;
+    height: 586px;
+  }
+  header {
+    padding-top: 37px;
+    margin: 0 auto;
+    width: 1366px;
+    height: 586px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../assets/headerbg.svg);
+    background-repeat: no-repeat;
+  }
 </style>

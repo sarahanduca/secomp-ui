@@ -89,7 +89,4 @@ export default {
 </script>
 
 <style scoped>
-    /* .auth {
-        margin: 5em;
-    } */
 </style>

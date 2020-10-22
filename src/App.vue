@@ -1,28 +1,14 @@
 <template>
   <div id="app">
-    <!-- <Event title="O EVENTO" />
-
-    <Cronograma />
-
-    <Campeonato /> -->
-    <Auth />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-// import Event from "./components/Header.vue";
-// import Cronograma from "./components/Cronograma.vue";
-// import Campeonato from "./components/Campeonato.vue";
-import Auth from "./components/PetMasterAuth.vue"
 
 export default {
   name: "App",
-  components: {
-    // Event,
-    // Cronograma,
-    // Campeonato,
-    Auth
-  },
+
 };
 </script>
 

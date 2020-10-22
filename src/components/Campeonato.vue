@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "Cronograma",
+  name: "Campeonato",
 };
 </script>
 
@@ -32,11 +32,5 @@ h1 {
   margin-right: 150px;
   font-size: 64px;
   letter-spacing: 0.1em;
-}
-h3 {
-  margin-top: 93px;
-  font-size: 48px;
-  margin-right: 903px;
-  margin-left: 299px;
 }
 </style>

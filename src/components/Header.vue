@@ -85,7 +85,6 @@ main p {
   font-family: "Varela Round", sans-serif;
   font-size: 16px;
   padding-top: 62px;
-
   height: 250px;
   margin: 0 auto;
   text-align: center;

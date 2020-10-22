@@ -2,18 +2,18 @@
   <div>
     <header>
       <img
-        src="../assets/logosecomp.svg"
+        src="../assets/secompBranca.png"
         alt="logo SECOMP"
         class="logo_secomp"
-        width="497"
-        height="440"
+        width="492"
+        height="430"
       />
       <img
         src="../assets/5edicao.svg"
         alt="5ta Edição"
         class="5ed"
-        width="73"
-        height="160"
+        width="43"
+        height="127"
       />
     </header>
     <main>
@@ -56,14 +56,16 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Varela+Round&display=swap");
+
 div {
-  width: 100%;
-  height: 586px;
+  width: 1366px;
+  height: 1020px;
+  margin: 0 auto;
 }
 header {
   padding-top: 37px;
   padding: 37px 98px;
-  margin: 0 auto;
+
   width: 1366px;
   height: 586px;
   display: flex;

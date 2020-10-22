@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <b-container>
     <header>
       <img
         src="../assets/secompBranca.png"
@@ -41,7 +41,7 @@
         repudiandae.
       </p>
     </main>
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -54,9 +54,9 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Varela+Round&display=swap");
-
+@import "../assets/styles/custom.scss";
 div {
   width: 1366px;
   height: 1000px;
@@ -74,8 +74,8 @@ header {
   background-repeat: no-repeat;
 }
 h1 {
-  font-family: "Bebas Neue", cursive;
-  color: #84d06a;
+  font-family: $titulo;
+  color: $secomp-verde;
   font-size: 64px;
 }
 main {
@@ -84,7 +84,7 @@ main {
   height: 435px;
 }
 main p {
-  font-family: "Varela Round", sans-serif;
+  font-family: $texto;
   font-size: 16px;
   padding-top: 62px;
   height: 250px;

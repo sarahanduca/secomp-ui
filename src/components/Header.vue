@@ -59,7 +59,7 @@ export default {
 
 div {
   width: 1366px;
-  height: 1020px;
+  height: 1000px;
   margin: 0 auto;
 }
 header {

@@ -1,5 +1,5 @@
 {
-  "name": "secomp-ui",
+  "name": "teste",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "bootstrap": "^3.4.1",
-    "bootstrap-vue": "^2.18.0",
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.18.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.12"
   },
@@ -20,8 +20,6 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^10.0.3",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {

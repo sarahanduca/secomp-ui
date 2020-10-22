@@ -51,11 +51,12 @@ export default {
             invalid: false    
         }
     },
-    mounted() {
-        let cookie = this.$cookies.get("token")
+    mounted () {
+        let cookie = this.$cookies.get("token");
         if(cookie != null){
-            // use router to get out of here
+            this.$router.push('/')
         }
+
     },
     methods: {
         async try_login() {
@@ -78,7 +79,7 @@ export default {
                     this.invalid = true
                 }
             })
-        }
+        },
     },
     computed: {
         pass_state() {

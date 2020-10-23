@@ -2,15 +2,18 @@
   <div>
     <b-container fluid>
       <h1>Cronograma</h1>
-      <h3 class="palestra">Palestras</h3>
-      <h3 class="workshop">Workshop</h3>
+      <h3>Palestras</h3>
+      <Carousel />
     </b-container>
   </div>
 </template>
 
 <script>
+import Carousel from "./Carousel.vue";
+
 export default {
   name: "Cronograma",
+  components: { Carousel },
 };
 </script>
 

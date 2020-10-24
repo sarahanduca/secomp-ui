@@ -1,25 +1,24 @@
 <template>
-  <div class="text-left container h-100">
-    <div class="row align-items-center h-100 justify-content-center">
-      <div class="col-10">
-        <b-form class="" @submit="onSubmit">
-          <b-form-group
-            id="input-group-name"
-            label="Usuário"
-            label-for="input-usuario"
-          >
-            <b-form-input
-              id="input-usuario"
-              disabled
-              value="PetMaster"
-              type="text"
-            ></b-form-input>
-          </b-form-group>
-
+  <div class="h-100" id="login">
+    <b-row
+      class="h-100 mx-0 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5 px-xl-5 px-lg-4"
+      align-h="center"
+      align-v="center"
+    >
+      <b-col class="mx-0 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5 px-xl-5 px-lg-4">
+        <b-img
+          src="../assets/LogoSECOMP.png"
+          alt="logo SECOMP"
+          class="mx-auto"
+          width="114"
+          height="100"
+        />
+        <b-form @submit="onSubmit">
           <b-form-group
             id="input-group-senha"
             label="Senha"
             label-for="input-senha"
+            label-align="left"
           >
             <b-form-input
               id="input-senha"
@@ -32,11 +31,11 @@
           </b-form-group>
 
           <b-form-group class="text-center">
-            <b-button type="submit" variant="primary">Login</b-button>
+            <b-button type="submit" variant="success">Login</b-button>
           </b-form-group>
         </b-form>
-      </div>
-    </div>
+      </b-col>
+    </b-row>
   </div>
 </template>
 
@@ -87,4 +86,13 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+#login {
+  background-image: url("../assets/fundoHeader.svg");
+  background-repeat: repeat-x;
+  background-position: center -300px;
+}
+.col {
+  max-width: 500px;
+}
+</style>

@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <b-container fluid>
-      <h1>Cronograma</h1>
-      <h3>Palestras</h3>
-      <Carousel />
-    </b-container>
-  </div>
+  <b-container>
+    <h1>Cronograma</h1>
+    <h3>Palestras</h3>
+    <b-container fluid class="car"> <Carousel /></b-container>
+  </b-container>
 </template>
 
 <script>
@@ -26,7 +24,6 @@ div {
   color: #ffffff;
   background-image: url(../assets/fundoCro.svg);
   background-repeat: no-repeat;
-  width: 1366px;
   height: 1260px;
   margin: 0 auto;
 }
@@ -48,5 +45,10 @@ h3.workshop {
   font-size: 48px;
   margin-right: 903px;
   margin-left: 299px;
+}
+.car {
+  margin: 0 auto;
+
+  height: 400px;
 }
 </style>

@@ -57,21 +57,24 @@ export default {
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Varela+Round&display=swap");
 @import "../assets/styles/custom.scss";
-div {
-  width: 1366px;
-  height: 1000px;
-  margin: 0 auto;
-}
+
 header {
   padding-top: 37px;
   padding: 37px 98px;
-
-  width: 1366px;
-  height: 586px;
+  height: 588px;
   display: flex;
   justify-content: space-between;
-  background-image: url(../assets/headerbg.svg);
+  background-image: url(../assets/fundoHeader.svg);
   background-repeat: no-repeat;
+}
+.container,
+.container-lg,
+.container-xl {
+  max-width: 1440px;
+}
+.container-sm,
+.container-md {
+  max-width: 900px;
 }
 h1 {
   font-family: $titulo;
@@ -80,7 +83,7 @@ h1 {
 }
 main {
   margin: 0 auto;
-  width: 1155px;
+
   height: 435px;
 }
 main p {

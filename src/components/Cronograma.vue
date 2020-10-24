@@ -1,32 +1,29 @@
 <template>
-  <div>
-    <b-container>
-      <h1>Cronograma</h1>
-      <h3>Palestras</h3>
-      <Carousel />
-    </b-container>
-  </div>
-  
+  <b-container>
+    <h1>Cronograma</h1>
+    <h3>Palestras</h3>
+    <b-container fluid class="car"> <Carousel /></b-container>
+  </b-container>
 </template>
 
 <script>
-import Carousel from './Carousel.vue'
+import Carousel from "./Carousel.vue";
 
 export default {
   name: "Cronograma",
-  components: { Carousel }
+  components: { Carousel },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Varela+Round&display=swap");
+@import "../assets/styles/custom.scss";
 div {
-  font-family: "Bebas Neue", cursive;
+  font-family: $titulo;
   color: #ffffff;
   background-image: url(../assets/fundoCro.svg);
   background-repeat: no-repeat;
-  width: 1366px;
   height: 1260px;
   margin: 0 auto;
 }
@@ -37,10 +34,21 @@ h1 {
   font-size: 64px;
   letter-spacing: 0.1em;
 }
-h3 {
+h3.palestra {
   margin-top: 93px;
   font-size: 48px;
   margin-right: 903px;
   margin-left: 299px;
+}
+h3.workshop {
+  margin-top: 400px;
+  font-size: 48px;
+  margin-right: 903px;
+  margin-left: 299px;
+}
+.car {
+  margin: 0 auto;
+
+  height: 400px;
 }
 </style>

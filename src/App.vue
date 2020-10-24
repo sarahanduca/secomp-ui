@@ -5,10 +5,8 @@
 </template>
 
 <script>
-
 export default {
-  name: "App",
-
+  name: "App"
 };
 </script>
 
@@ -23,7 +21,8 @@ export default {
   box-sizing: border-box;
   height: 100%;
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 </style>

@@ -49,7 +49,7 @@ const router = new VueRouter({
             if (logged) {
               next();
             } else {
-              next("/erro");
+              next("/login");
             }
           })
           .catch(() => {

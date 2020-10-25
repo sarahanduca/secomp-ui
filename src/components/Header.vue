@@ -1,5 +1,36 @@
 <template>
-  <b-container>
+  <b-container fluid id="head">
+    <b-navbar fixed="top" toggleable="lg" type="dark" variant="info">
+      <b-navbar-brand href="#head"
+        ><img
+          src="../assets/secompBranca.png"
+          alt="logo SECOMP"
+          class="logo_secomp"
+          width="98"
+          height="82"
+      /></b-navbar-brand>
+
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav>
+          <b-nav-item href="#">Palestras</b-nav-item>
+          <b-nav-item href="#">Workshops</b-nav-item>
+          <b-nav-item href="#">Campeonato</b-nav-item>
+          <b-nav-item href="#">Sorteio</b-nav-item>
+        </b-navbar-nav>
+
+        <!-- Right aligned nav items -->
+        <b-navbar-nav class="ml-auto">
+          <b-nav-form>
+            <b-button size="sm" class="my-2 my-sm-0" type="submit"
+              >Search</b-button
+            >
+          </b-nav-form>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
+
     <header>
       <img
         src="../assets/secompBranca.png"
@@ -66,6 +97,7 @@ header {
   justify-content: space-between;
   background-image: url(../assets/fundoHeader.svg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .container,
 .container-lg,

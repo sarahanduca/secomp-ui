@@ -1,17 +1,13 @@
 <template>
-  <b-container>
+  <b-container class="cro">
     <h1>Cronograma</h1>
     <h3>Palestras</h3>
-    <b-container fluid class="car"> <Carousel /></b-container>
   </b-container>
 </template>
 
 <script>
-import Carousel from "./Carousel.vue";
-
 export default {
   name: "Cronograma",
-  components: { Carousel },
 };
 </script>
 
@@ -19,16 +15,15 @@ export default {
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Varela+Round&display=swap");
 @import "../assets/styles/custom.scss";
-div {
+.cro {
   font-family: $titulo;
-  color: #ffffff;
+  color: #000000;
   background-image: url(../assets/fundoCro.svg);
-  background-repeat: no-repeat;
+
   height: 1260px;
   margin: 0 auto;
 }
 h1 {
-  margin-top: 143px;
   margin-left: 895px;
   margin-right: 150px;
   font-size: 64px;
@@ -45,10 +40,5 @@ h3.workshop {
   font-size: 48px;
   margin-right: 903px;
   margin-left: 299px;
-}
-.car {
-  margin: 0 auto;
-
-  height: 400px;
 }
 </style>

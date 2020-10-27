@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div id="app">
     <Event title="O EVENTO" />
 
-    <Cronograma />
+    <Cronograma id="cronograma" />
 
-    <Campeonato />  
+    <Campeonato id="campeonato" />
   </div>
 </template>
 
@@ -12,7 +12,6 @@
 import Event from "./Header.vue";
 import Cronograma from "./Cronograma.vue";
 import Campeonato from "./Campeonato.vue";
-
 
 export default {
   name: "Secomp",
@@ -24,5 +23,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "../assets/styles/custom.scss";
+div {
+  background: $secomp-preto;
+}
 </style>

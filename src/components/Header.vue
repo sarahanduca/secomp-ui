@@ -1,41 +1,5 @@
 <template>
-  <b-container fluid id="head">
-    <b-navbar
-      align="center"
-      fixed="top"
-      toggleable="lg"
-      type="dark"
-      variant="dark"
-    >
-      <b-navbar-brand href="#head"
-        ><img
-          src="../assets/secompBranca.png"
-          alt="logo SECOMP"
-          class="logo_secomp"
-          width="98"
-          height="82"
-      /></b-navbar-brand>
-
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
-          <b-nav-item href="#">Palestras</b-nav-item>
-          <b-nav-item href="#">Workshops</b-nav-item>
-          <b-nav-item href="#">Campeonato</b-nav-item>
-          <b-nav-item href="#">Sorteio</b-nav-item>
-        </b-navbar-nav>
-
-        <!-- Right aligned nav items -->
-        <b-navbar-nav class="ml-auto">
-          <b-nav-form>
-            <b-button size="sm" class="my-2 my-sm-0" type="submit"
-              >Search</b-button
-            >
-          </b-nav-form>
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
+  <b-container id="head">
     <main>
       <h1>{{ title }}</h1>
       <p>
@@ -77,11 +41,12 @@ export default {
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Varela+Round&display=swap");
 @import "../assets/styles/custom.scss";
+
 main {
-  text-align: left;
+  text-align: center;
   margin: 0 auto;
-  margin-top: 10rem;
-  height: 435px;
+  margin-top: 5rem;
+  height: 100vh;
 }
 h1 {
   font-family: $titulo;

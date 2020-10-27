@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Event title="O EVENTO" />
+    <NavBar />
+
+    <Event />
 
     <Cronograma />
 
@@ -9,6 +11,7 @@
 </template>
 
 <script>
+import NavBar from "./NavBar.vue";
 import Event from "./Header.vue";
 import Cronograma from "./Cronograma.vue";
 import Campeonato from "./Campeonato.vue";
@@ -17,6 +20,7 @@ import Campeonato from "./Campeonato.vue";
 export default {
   name: "Secomp",
   components: {
+    NavBar,
     Event,
     Cronograma,
     Campeonato,
@@ -24,5 +28,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "../assets/styles/custom.scss";
+
+div {
+  background: $secomp-preto;
+}
 </style>

@@ -1,97 +1,91 @@
 <template>
   <b-container>
-    <header>
-      <img
-        src="../assets/secompBranca.png"
-        alt="logo SECOMP"
-        class="logo_secomp"
-        width="492"
-        height="430"
-      />
-      <img
-        src="../assets/5edicao.svg"
-        alt="5ta Edição"
-        class="5ed"
-        width="43"
-        height="127"
-      />
-    </header>
-    <main>
-      <h1>{{ title }}</h1>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti sed
-        ullam fuga, perferendis possimus alias tempora nisi cupiditate labore
-        dignissimos quisquam aut eos eius repellendus at, enim, unde optio
-        inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Enim nemo facere totam repellat dicta dolor cupiditate recusandae,
-        corporis dolore nihil maxime ipsa eius delectus nesciunt neque! Mollitia
-        quae ab temporibus! Maiores aliquam odit corporis vel quasi, voluptate,
-        blanditiis earum quas libero voluptatibus ratione unde accusantium, illo
-        a hic nam dignissimos? A, praesentium exercitationem est explicabo
-        laudantium modi aliquid ad laborum. Reiciendis autem deserunt accusamus
-        praesentium quibusdam a quidem, voluptatem eaque numquam reprehenderit
-        cum magnam error vero aperiam dolorem facilis excepturi soluta minus
-        deleniti esse. Cumque aliquid veritatis error. Lorem ipsum dolor, sit
-        amet consectetur adipisicing elit. Nulla provident magni ex quasi,
-        magnam esse neque blanditiis? Facilis quidem aspernatur veritatis quod
-        doloribus expedita ipsa repudiandae. Repellat illo minima voluptatum.
-        Placeat omnis blanditiis accusantium dolores voluptatum officia earum
-        incidunt, dolore voluptatibus atque maxime quisquam sequi iure a dolorum
-        pariatur ea aliquid possimus quasi qui rerum? Necessitatibus, atque
-        repudiandae.
-      </p>
-    </main>
+    <div class="event">
+      <div class="title">
+        <h1> O EVENTO </h1>
+        <h2 v-if="!expired"> {{displayDays}} DIAS E {{displayHours}} HORAS</h2>
+        <h2 v-else>Aproveite a SECOMP</h2>
+      </div>
+      
+      <p>A Semana da Computação é um evento Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. A Semana da Computação é um evento Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>  
   </b-container>
 </template>
 
 <script>
 export default {
-  name: "Event",
-  props: {
-    title: String,
+  data: () => ({
+    displayDays: 0,
+    displayHours: 0,
+    expired: false
+  }),
+  computed: {
+    _seconds: () => 1000,
+    _minutes(){
+      return this._seconds * 60;
+    },
+    _hours(){
+      return this._minutes *60;
+    },
+    _days(){
+      return this._hours *24;
+    }
   },
+  mounted() {
+    this.showRemaining();
+  },
+  methods: {
+    formatNum: num => (num < 10 ? "0" + num : num),
+    showRemaining(){
+      const timer = setInterval(() => {
+        const now = new Date();
+        const end = new Date(2020, 10, 2, 10, 10, 10, 10);
+        const distance = end.getTime() - now.getTime();
+
+        if(distance < 0){
+          clearInterval(timer);
+          this.expired = true;
+          return
+        }
+
+        const days = Math.floor(distance / this._days);
+        const hours = Math.floor((distance % this._days) / this._hours);
+
+        this.displayHours = this.formatNum(hours);
+        this.displayDays = this.formatNum(days);
+      })
+    }
+  }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Varela+Round&display=swap");
-@import "../assets/styles/custom.scss";
 
-header {
-  padding-top: 37px;
-  padding: 37px 98px;
-  height: 588px;
+.event .title {
   display: flex;
-  justify-content: space-between;
-  background-image: url(../assets/fundoHeader.svg);
-  background-repeat: no-repeat;
+  font-family: Bebas Neue, cursive;
 }
-.container,
-.container-lg,
-.container-xl {
-  max-width: 1440px;
+.event .title h1 {
+  color: #296016;
+  position: relative;
+  left: 40px;
+  padding-top: 40px;
+  font-size: 78px;
 }
-.container-sm,
-.container-md {
-  max-width: 900px;
-}
-h1 {
-  font-family: $titulo;
-  color: $secomp-verde;
-  font-size: 64px;
-}
-main {
-  margin: 0 auto;
 
-  height: 435px;
+.event .title h2 {
+  color: #dddddd;
+  margin-left: auto;
+  position: relative;
+  right: 50px;
+  font-size: 72px;
 }
-main p {
-  font-family: $texto;
-  font-size: 16px;
-  padding-top: 62px;
-  height: 250px;
-  margin: 0 auto;
-  text-align: center;
+
+.event p {
+  color: #7a7a7a;
+  margin: 20px;
+  text-align: justify;
+  
 }
 </style>

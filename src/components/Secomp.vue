@@ -18,12 +18,12 @@ export default {
   components: {
     Event,
     Cronograma,
-    Campeonato,
-  },
+    Campeonato
+  }
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../assets/styles/custom.scss";
 div {
   background: $secomp-preto;

@@ -10,7 +10,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "./assets/styles/custom.scss";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,5 +26,6 @@ export default {
 html,
 body {
   height: 100%;
+  font-family: $titulo, Avenir, Helvetica, Arial, sans-serif;
 }
 </style>

@@ -54,16 +54,13 @@ export default {
   methods: {
     async onSubmit(evt) {
       evt.preventDefault();
-      const response = await fetch(
-        process.env.VUE_APP_API_URL + "/petmaster/auth",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(this.form)
-        }
-      ).then(r => r.json(), false);
+      const response = await fetch(process.env.VUE_APP_API_URL + "/api/auth", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(this.form)
+      }).then(r => r.json(), false);
 
       if (response) {
         localStorage.setItem("token", response.auth_token);

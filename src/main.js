@@ -9,6 +9,8 @@ import Auth from "./components/PetMasterAuth.vue";
 import Secomp from "./components/Secomp.vue";
 import PetMaster from "./components/PetMaster.vue";
 import Erro from "./components/Erro.vue";
+import Inscritos from "./components/Inscritos.vue";
+import Detalhes from "./components/Detalhes.vue";
 
 import AuthService from "./services/auth.js";
 
@@ -55,7 +57,18 @@ const router = new VueRouter({
           .catch(() => {
             next("/erro");
           });
-      }
+      },
+      children: [
+        {
+          path: "",
+          component: Inscritos
+        },
+        {
+          path: "/inscrito",
+          component: Detalhes,
+          props: route => ({ id: route.query.id })
+        }
+      ]
     }
   ]
 });

@@ -1,12 +1,29 @@
 <template>
-  <b-row class="w-100 mx-0">
-    <b-col
-      id="detalhes"
-      class="d-sm-none d-none d-md-block pt-3"
-      cols="3"
-      v-text="inscrito"
-    >
-      {{ inscrito }}
+  <b-row class="h-100 w-100 mx-0" align-v="center">
+    <b-col>
+      <b-container>
+        <b-img src="../../assets/avatar.svg" width="100" class="mb-5" />
+        <b-row align-v="center">
+          <b-col>
+            <h4>{{ this.inscrito.nome }}</h4>
+            <br />
+            <span>{{ this.inscrito.email }}</span>
+          </b-col>
+        </b-row>
+        <b-col></b-col>
+        <b-row> </b-row>
+        <b-row>
+          <b-col>{{ this.inscrito.cpf }}</b-col>
+        </b-row>
+        <b-row>
+          <b-col>{{ this.inscrito.ra }}</b-col>
+        </b-row>
+        <b-row class="mt-4">
+          <b-col>
+            <b-btn variant="dark" @click="remove">Remover</b-btn>
+          </b-col>
+        </b-row>
+      </b-container>
     </b-col>
   </b-row>
 </template>
@@ -18,10 +35,10 @@ export default {
   props: ["id"],
   data: function() {
     return {
-      inscrito: null
+      inscrito: ""
     };
   },
-  created: async function() {
+  mounted: async function() {
     const key = AuthService.getKey();
 
     if (key) {
@@ -46,7 +63,37 @@ export default {
       this.$router.push("/login");
     }
   },
-  methods: {}
+  methods: {
+    remove: async function() {
+      const key = AuthService.getKey();
+      if (key) {
+        // eslint-disable-next-line no-unused-vars
+        const data = await fetch(
+          process.env.VUE_APP_API_URL + "/api/remove/" + this.id,
+          {
+            method: "DELETE",
+            mode: "cors",
+            headers: {
+              Authorization: `Bearer ${key}`
+            }
+          }
+        )
+          .then(true, false)
+          .catch(() => {
+            this.$router.push("/erro");
+          });
+
+        if (data) {
+          this.$router.push("/petmaster");
+        } else {
+          this.$router.push("erro");
+        }
+      } else {
+        AuthService.logout();
+        this.$router.push("/login");
+      }
+    }
+  }
 };
 </script>
 <style></style>

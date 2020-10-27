@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="h-100">
     <b-navbar toggleable="lg" type="dark" variant="success">
-      <b-navbar-brand>
+      <b-navbar-brand to="/petmaster">
         <img src="../../assets/secompBranca.png" width="45" alt="Logo SECOMP" />
       </b-navbar-brand>
 
@@ -9,11 +9,11 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">Inscritos</b-nav-item>
+          <b-nav-item to="/petmaster">Inscritos</b-nav-item>
           <b-nav-item href="#">Disparos</b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto">
-          <b-btn variant="dark">Sair</b-btn>
+          <b-btn variant="dark" @click="logout">Sair</b-btn>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -24,10 +24,17 @@
 </template>
 
 <script>
+import AuthService from "../../services/auth.js";
 export default {
   name: "PetMaster",
   data() {
     return {};
+  },
+  methods: {
+    logout: function() {
+      AuthService.logout();
+      this.$router.push("/");
+    }
   }
 };
 </script>

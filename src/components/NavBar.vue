@@ -33,7 +33,6 @@ export default {
     display: flex;
     align-items: center;
     width: 100%;
-    // padding: 10px;
 }
 
 .menuMiddle {
@@ -64,6 +63,39 @@ export default {
 
 .navbar img {
     margin: 4px;
+}
+
+@media (max-width: 988px){
+    .menuMiddle p {
+        font-size: 20px;
+    }
+
+    .navbar .inscrever p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 730px){
+    .menuMiddle {
+        display: none;
+    }
+
+    .inscrever {
+        display: none;
+    }
+
+    img {
+    position: relative;
+    left: 45%;
+    }
+
+    .menuMiddle p {
+        font-size: 15px;
+    }
+
+    .navbar .inscrever p {
+        font-size: 15px;
+    }
 }
 
 </style>

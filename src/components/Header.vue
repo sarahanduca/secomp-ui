@@ -39,7 +39,7 @@ export default {
     showRemaining(){
       const timer = setInterval(() => {
         const now = new Date();
-        const end = new Date(2020, 10, 2, 10, 10, 10, 10);
+        const end = new Date(2020, 10, 1, 0, 0, 0, 0);
         const distance = end.getTime() - now.getTime();
 
         if(distance < 0){
@@ -87,5 +87,21 @@ export default {
   margin: 20px;
   text-align: justify;
   
+}
+
+@media (max-width: 988px){
+  .event .title h2 {
+    font-size: 52px;
+  } 
+}
+
+@media (max-width: 730px){
+  .event .title h2 {
+    font-size: 42px;
+  } 
+
+  .event .title h1 {
+    font-size: 58px;
+  }
 }
 </style>

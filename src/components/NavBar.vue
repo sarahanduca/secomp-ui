@@ -1,7 +1,8 @@
 <template>
-    <b-container>
+    <div>
+    <div class="b-container">
         <div class="navbar">
-            <img src="../assets/secompBranca.svg" />
+            <img class="ml-1" src="../assets/secompBranca.svg" />
 
             <div class="menuMiddle">
                 <p>PALESTRAS</p>
@@ -13,7 +14,8 @@
                 <p>INSCREVA-SE</p>
             </div>
         </div>
-    </b-container>
+    </div>
+    </div>
 </template>
 
 <script>
@@ -26,13 +28,16 @@ export default {
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-
+div {
+    background-color: #296016;
+}
 .navbar {
     overflow: hidden;
     background-color: #296016;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 
 .menuMiddle {
@@ -58,11 +63,6 @@ export default {
 
 .navbar .inscrever {
     background-color: #296016;
-    
-}
-
-.navbar img {
-    margin: 4px;
 }
 
 @media (max-width: 988px){
@@ -88,14 +88,7 @@ export default {
     position: relative;
     left: 45%;
     }
-
-    .menuMiddle p {
-        font-size: 15px;
-    }
-
-    .navbar .inscrever p {
-        font-size: 15px;
-    }
+    
 }
 
 </style>

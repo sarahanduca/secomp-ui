@@ -2,7 +2,7 @@
   <div>
     <b-navbar toggleable="lg" type="dark" variant="success">
       <b-navbar-brand>
-        <img src="../assets/secompBranca.png" width="45" alt="Logo SECOMP" />
+        <img src="../../assets/secompBranca.png" width="45" alt="Logo SECOMP" />
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>

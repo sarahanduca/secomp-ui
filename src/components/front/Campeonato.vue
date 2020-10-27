@@ -6,14 +6,14 @@
 
 <script>
 export default {
-  name: "Cronograma",
+  name: "Cronograma"
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Varela+Round&display=swap");
-@import "../assets/styles/custom.scss";
+@import "../../assets/styles/custom.scss";
 
 ::before .camp {
   background: $secomp-verde;
@@ -22,7 +22,7 @@ export default {
 .camp {
   font-family: "Bebas Neue", cursive;
   color: #ffffff;
-  background-image: url(../assets/fundoCamp.svg);
+  background-image: url(../../assets/fundoCamp.svg);
   background-size: cover;
   position: relative;
   top: -6rem;

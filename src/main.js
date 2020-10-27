@@ -5,12 +5,12 @@ import VueRouter from "vue-router";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 
-import Auth from "./components/PetMasterAuth.vue";
-import Secomp from "./components/Secomp.vue";
-import PetMaster from "./components/PetMaster.vue";
-import Erro from "./components/Erro.vue";
-import Inscritos from "./components/Inscritos.vue";
-import Detalhes from "./components/Detalhes.vue";
+import Auth from "./components/organizacao/PetMasterAuth.vue";
+import Secomp from "./components/front/Secomp.vue";
+import PetMaster from "./components/organizacao/PetMaster.vue";
+import Erro from "./components/organizacao/Erro.vue";
+import Inscritos from "./components/organizacao/Inscritos.vue";
+import Detalhes from "./components/organizacao/Detalhes.vue";
 
 import AuthService from "./services/auth.js";
 

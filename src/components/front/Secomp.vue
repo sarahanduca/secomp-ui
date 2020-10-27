@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/styles/custom.scss";
+@import "../../assets/styles/custom.scss";
 div {
   background: $secomp-preto;
 }

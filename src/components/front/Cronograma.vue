@@ -118,16 +118,16 @@ export default {
         `,
       quarta: `
          Mais alguma coisa aqui
-        `,
+        `
     };
-  },
+  }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Varela+Round&display=swap");
-@import "../assets/styles/custom.scss";
+@import "../../assets/styles/custom.scss";
 
 #cronograma {
   width: 75%;
@@ -139,7 +139,7 @@ export default {
   height: 100vh;
 }
 ::before {
-  background-image: url("../assets/diagonalGrande.svg");
+  background-image: url("../../assets/diagonalGrande.svg");
 }
 h1 {
   padding-top: 3rem;

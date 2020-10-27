@@ -7,7 +7,7 @@
     >
       <b-col class="mx-0 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5 px-xl-5 px-lg-4">
         <b-img
-          src="../assets/LogoSECOMP.png"
+          src="../../assets/LogoSECOMP.png"
           alt="logo SECOMP"
           class="mx-auto"
           width="114"
@@ -85,7 +85,7 @@ export default {
 
 <style scoped>
 #login {
-  background-image: url("../assets/fundoHeader.svg");
+  background-image: url("../../assets/fundoHeader.svg");
   background-repeat: repeat-x;
   background-position: center -300px;
 }

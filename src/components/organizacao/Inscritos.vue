@@ -1,7 +1,6 @@
 <template>
   <b-row class="w-100 mx-0">
     <b-col
-      id="action"
       class="d-sm-none d-none d-md-block pt-3"
       cols="3"
       v-b-visible="sidebar_visible"
@@ -56,7 +55,7 @@
 </template>
 
 <script>
-import AuthService from "../services/auth.js";
+import AuthService from "../../services/auth.js";
 export default {
   name: "Inscritos",
   data: function() {
@@ -76,7 +75,6 @@ export default {
     const key = AuthService.getKey();
 
     if (key) {
-      // eslint-disable-next-line no-unused-vars
       const data = await fetch(process.env.VUE_APP_API_URL + "/api/list", {
         method: "GET",
         mode: "cors",
@@ -124,8 +122,5 @@ table,
 td,
 th {
   text-align: left;
-}
-#actions {
-  border: 1px solid black !important;
 }
 </style>

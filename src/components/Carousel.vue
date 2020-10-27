@@ -3,7 +3,7 @@
     <b-carousel
       id="carousel-1"
       v-model="slide"
-      :interval="4000"
+      :interval="0"
       controls
       indicators
       background="#ababab"
@@ -25,22 +25,19 @@
         </template>
       </b-carousel-slide>
 
-      <!-- Slides with image only -->
       <b-carousel-slide>
         <template #img>
           <img
-            src="https://picsum.photos/1024/480/?image=55"
+            src="https://picsum.photos/1200/480/?image=55"
             alt="image slot"
           />
         </template>
       </b-carousel-slide>
 
-      <!-- Slides with img slot -->
-      <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
       <b-carousel-slide>
         <template #img>
           <img
-            src="https://picsum.photos/1024/480/?image=55"
+            src="https://picsum.photos/1200/480/?image=55"
             alt="image slot"
           />
         </template>

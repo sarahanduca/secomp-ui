@@ -1,21 +1,5 @@
 <template>
-  <b-container>
-    <header>
-      <img
-        src="../assets/secompBranca.png"
-        alt="logo SECOMP"
-        class="logo_secomp"
-        width="492"
-        height="430"
-      />
-      <img
-        src="../assets/5edicao.svg"
-        alt="5ta Edição"
-        class="5ed"
-        width="43"
-        height="127"
-      />
-    </header>
+  <b-container id="head">
     <main>
       <h1>{{ title }}</h1>
       <p>
@@ -58,40 +42,22 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Varela+Round&display=swap");
 @import "../assets/styles/custom.scss";
 
-header {
-  padding-top: 37px;
-  padding: 37px 98px;
-  height: 588px;
-  display: flex;
-  justify-content: space-between;
-  background-image: url(../assets/fundoHeader.svg);
-  background-repeat: no-repeat;
-}
-.container,
-.container-lg,
-.container-xl {
-  max-width: 1440px;
-}
-.container-sm,
-.container-md {
-  max-width: 900px;
+main {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5rem;
+  height: 100vh;
 }
 h1 {
   font-family: $titulo;
   color: $secomp-verde;
   font-size: 64px;
 }
-main {
-  margin: 0 auto;
 
-  height: 435px;
-}
 main p {
   font-family: $texto;
-  font-size: 16px;
-  padding-top: 62px;
+  font-size: 1.6rem;
+  padding-top: 1rem;
   height: 250px;
-  margin: 0 auto;
-  text-align: center;
 }
 </style>

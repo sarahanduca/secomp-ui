@@ -1,5 +1,6 @@
 <template>
 <b-container>
+  <div class="camp">
   <h1>Campeonato</h1>
   <div class="cards-list">
   
@@ -76,6 +77,7 @@
 
 </div>
 <p>*Para mais detalhes confira nossas redes sociais*</p>
+</div>
 </b-container>
 </template>
 
@@ -95,7 +97,10 @@ h1 {
   justify-content: center;
   color: #ffffff;
   padding: 0px 20px;
-  
+}
+
+.camp {
+  background-color: #151515;
 }
 
 .title-award h2 {
@@ -296,15 +301,15 @@ p {
 
 @media (max-width: 450px) {
   .podio h4 {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .podio h2 {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .podio h3 {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 </style>

@@ -20,9 +20,11 @@ export default {
   padding: 0;
   box-sizing: border-box;
   height: 100%;
+  background-color: #151515;
 }
 html,
 body {
+  background-color: #151515;
   height: 100%;
 }
 </style>

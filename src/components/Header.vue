@@ -62,6 +62,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 
+.event {
+  background-color: #151515;
+}
+
 .event .title {
   display: flex;
   font-family: Bebas Neue, cursive;

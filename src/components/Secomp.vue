@@ -38,7 +38,4 @@ export default {
 <style lang="scss">
 @import "../assets/styles/custom.scss";
 
-div {
-  background: $secomp-preto;
-}
 </style>

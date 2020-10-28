@@ -9,9 +9,10 @@
                 <p>WORKSHOPS</p>
                 <p>CAMPEONATO</p>
                 <p>SORTEIO</p>
+                <p>INSCREVA-SE</p>
             </div>
             <div class="inscrever">
-                <p>INSCREVA-SE</p>
+                
             </div>
         </div>
     </div>
@@ -75,7 +76,7 @@ div {
     }
 }
 
-@media (max-width: 730px){
+@media (max-width: 781px){
     .menuMiddle {
         display: none;
     }
@@ -86,7 +87,7 @@ div {
 
     img {
     position: relative;
-    left: 45%;
+    left: 43%;
     }
     
 }

@@ -1,9 +1,11 @@
 import Vue from "vue";
 import App from "./App.vue";
 import BootstrapVue from "bootstrap-vue";
+import IconsPlugin from "bootstrap-vue";
 import VueRouter from "vue-router";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
+
 
 import Auth from "./components/PetMasterAuth.vue";
 import Secomp from "./components/Secomp.vue";
@@ -13,7 +15,11 @@ import Erro from "./components/Erro.vue";
 import AuthService from "./services/auth.js";
 
 Vue.use(BootstrapVue);
+Vue.use(IconsPlugin);
 Vue.use(VueRouter);
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.config.productionTip = false;
 

@@ -86,6 +86,8 @@ export default {
   color: #7a7a7a;
   margin: 20px;
   text-align: justify;
+  font-family: Bebas Neue, cursive;
+  font-size: 20px;
   
 }
 
@@ -95,9 +97,11 @@ export default {
   } 
 }
 
-@media (max-width: 730px){
+@media (max-width: 600px){
   .event .title h2 {
-    font-size: 42px;
+    font-size: 30px;
+    position: relative;
+    left: 5px;
   } 
 
   .event .title h1 {

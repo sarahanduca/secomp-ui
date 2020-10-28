@@ -2,7 +2,7 @@
     <div>
     <div class="b-container">
         <div class="navbar">
-            <img class="ml-1" src="../assets/secompBranca.svg" />
+            <img class="ml-1" src="../assets/logoSECOMP.svg" />
 
             <div class="menuMiddle">
                 <p>PALESTRAS</p>
@@ -66,7 +66,7 @@ div {
     background-color: #296016;
 }
 
-@media (max-width: 988px){
+@media (max-width: 1000px){
     .menuMiddle p {
         font-size: 20px;
     }

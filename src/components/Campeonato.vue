@@ -68,7 +68,7 @@ h1 {
   font-family: Bebas Neue, cursive;
   font-size: 64px;
   position: relative;
-  left: 40px;
+  left: 20px;
 }
 
 .info h4 {
@@ -76,7 +76,7 @@ h1 {
   font-family: Bebas Neue, cursive;
   color: #878787;
   position: relative;
-  left: 40px;
+  left: 20px;
 }
 
 .info p {
@@ -84,6 +84,8 @@ h1 {
   font-size: 18px;
   font-family: Bebas Neue, cursive;
   color: #7a7a7a;
+  text-align: justify;
+  margin: 20px;
 }
 
 .cards-list {

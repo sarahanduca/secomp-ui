@@ -13,7 +13,6 @@
           placeholder="Pesquisar"
         ></b-form-input>
       </b-form-group>
-      <b-btn variant="success">Exportar Emails</b-btn>
     </b-col>
     <b-col class="px-0 d-md-block" v-if="!isBusy">
       <b-form-group class="my-2 mx-2 d-md-none">
@@ -111,9 +110,13 @@ export default {
       }
     },
     rowSelected: function(inscrito) {
-      this.$router.push({ path: "/inscrito", query: { id: inscrito[0].id } });
+      this.$router.push({
+        path: "/petmaster/inscrito",
+        query: { id: inscrito[0].id }
+      });
     }
-  }
+  },
+  computed: {}
 };
 </script>
 

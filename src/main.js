@@ -11,6 +11,8 @@ import PetMaster from "./components/organizacao/PetMaster.vue";
 import Erro from "./components/organizacao/Erro.vue";
 import Inscritos from "./components/organizacao/Inscritos.vue";
 import Detalhes from "./components/organizacao/Detalhes.vue";
+import Disparos from "./components/organizacao/Disparos.vue";
+import Compositor from "./components/organizacao/Compositor.vue";
 
 import AuthService from "./services/auth.js";
 
@@ -64,9 +66,17 @@ const router = new VueRouter({
           component: Inscritos
         },
         {
-          path: "/inscrito",
+          path: "inscrito",
           component: Detalhes,
           props: route => ({ id: route.query.id })
+        },
+        {
+          path: "disparos",
+          component: Disparos
+        },
+        {
+          path: "compositor",
+          component: Compositor
         }
       ]
     }

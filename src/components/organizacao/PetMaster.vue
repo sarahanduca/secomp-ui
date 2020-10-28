@@ -1,6 +1,6 @@
 <template>
   <div class="h-100">
-    <b-navbar toggleable="lg" type="dark" variant="success">
+    <b-navbar toggleable="lg" type="dark" variant="success" sticky>
       <b-navbar-brand to="/petmaster">
         <img src="../../assets/secompBranca.png" width="45" alt="Logo SECOMP" />
       </b-navbar-brand>
@@ -10,7 +10,8 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item to="/petmaster">Inscritos</b-nav-item>
-          <b-nav-item href="#">Disparos</b-nav-item>
+          <b-nav-item to="/petmaster/disparos">Disparos</b-nav-item>
+          <b-nav-item to="/petmaster/compositor">Compositor</b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto">
           <b-btn variant="dark" @click="logout">Sair</b-btn>

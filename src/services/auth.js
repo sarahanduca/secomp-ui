@@ -7,7 +7,7 @@ class AuthService {
         const response = await fetch(
           process.env.VUE_APP_API_URL + "/api/list",
           {
-            method: "GET",
+            method: "HEAD",
             mode: "cors",
             headers: {
               Authorization: `Bearer ${key}`

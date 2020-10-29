@@ -18,7 +18,8 @@
         <div class="card_title title-white">
         </div>
         </div>
-        <div class="card 1">
+        
+        <div class="card 3">
             <div class="card_image"> <img src="../assets/sorteio2.jpg" /> </div>
             <div class="card_title title-white">
             </div>
@@ -69,7 +70,6 @@ export default {
 
 .info h1 {
     font-family: Bebas Neue, cursive;
-    margin: 40px 0 10px 30px;
     text-decoration: underline;
     text-align: center;
 }
@@ -77,7 +77,6 @@ export default {
 .info h2 {
     font-family: Bebas Neue, cursive;
     margin: 10px 0 0 30px;
-    /* text-align: justify; */
 }
 
 .info .perguntas {

@@ -1,133 +1,99 @@
 <template>
-    <div class="image">
+  <div class="image">
     <b-container>
-  <div class="sorteio">
-      <h2>Sorteios</h2>
-  <div class="cards-list">
-  
-    <div class="card 1">
-        <div class="card_image"> <img src="../assets/redbull.jpg" /> </div>
-        <div class="card_title title-white">
-        </div>
-    </div>
-
-        <div class="card 2">
-        <div class="card_image">
-            <img src="../assets/sorteio.png" />
-        </div>
-        <div class="card_title title-white">
-        </div>
-        </div>
-        
-        <div class="card 3">
-            <div class="card_image"> <img src="../assets/sorteio2.jpg" /> </div>
-            <div class="card_title title-white">
+      <b-row class="w-100 mx-0 text-center text-light" align-h="center">
+        <b-col class="sorteio">
+          <h1>Sorteios</h1>
+        </b-col>
+      </b-row>
+      <b-row class="cards-list w-100 mx-0">
+        <b-col>
+          <div class="card 1">
+            <div class="card_image"><img src="../assets/redbull.jpg" /></div>
+          </div>
+        </b-col>
+        <b-col>
+          <div class="card 2">
+            <div class="card_image">
+              <img src="../assets/sorteio.png" />
             </div>
-        </div>
-    </div>  
-</div>
+          </div>
+        </b-col>
+        <b-col>
+          <div class="card 3">
+            <div class="card_image"><img src="../assets/sorteio2.jpg" /></div>
+          </div>
+        </b-col>
+      </b-row>
+      <b-row class="w-100 mx-0 info">
+        <b-col>
+          <h1 class="text-center text">FAQ</h1>
+        </b-col>
+      </b-row>
 
-<div class="info">
-    <h1>FAQ</h1>
-    <div class="perguntas">
-    <div class="pergunta1">   
-    <h2>QUEM PODE PARTICIPAR?</h2>
-    <div class="resposta">
-        <h4>R:</h4>
-        <p>pipipopo</p>
-    </div>
-    </div> 
-    
-    <div class="pergunta2">
-    <h2>QUANDO QUE SERÁ O SORTEIO?</h2>
-    <div class="resposta">
-        <h4>R:</h4>
-        <p>pipipopo</p>
-    </div>
-    </div>
-    
-    <div class="pergunta3">
-    <h2>COMO QUE ELE VAI SER ENTREGUE?</h2>
-    <div class="resposta">
-        <h4>R:</h4>
-        <p>pipipopo</p>
-    </div>
-    </div>
-
-    </div>
-</div>
-</b-container>
-</div>
+      <b-row class="faq mx-0 w-100 text-center" align-h="center">
+        <b-col>
+          <h2>QUEM PODE PARTICIPAR?</h2>
+          <p>
+            Ipsam sit itaque incidunt aliquid vero id iusto. Harum voluptatem
+            nihil delectus fugit ut id officiis. Natus nihil est numquam nihil
+            blanditiis alias ut. Vitae aut rerum omnis amet cumque. Vel harum
+            error et saepe exercitationem itaque voluptatum. Ex molestias ut
+            culpa autem
+          </p>
+        </b-col>
+        <b-col>
+          <h2>QUANDO QUE SERÁ O SORTEIO?</h2>
+          <p>
+            Ipsam sit itaque incidunt aliquid vero id iusto. Harum voluptatem
+            nihil delectus fugit ut id officiis. Natus nihil est numquam nihil
+            blanditiis alias ut. Vitae aut rerum omnis amet cumque. Vel harum
+            error et saepe exercitationem itaque voluptatum. Ex molestias ut
+            culpa autem
+          </p>
+        </b-col>
+        <b-col>
+          <h2>COMO QUE ELE VAI SER ENTREGUE?</h2>
+          <p>
+            Ipsam sit itaque incidunt aliquid vero id iusto. Harum voluptatem
+            nihil delectus fugit ut id officiis. Natus nihil est numquam nihil
+            blanditiis alias ut. Vitae aut rerum omnis amet cumque. Vel harum
+            error et saepe exercitationem itaque voluptatum. Ex molestias ut
+            culpa autem
+          </p>
+        </b-col>
+      </b-row>
+    </b-container>
+  </div>
 </template>
 
 <script>
 export default {
-    name: "Sorteio",
-}
+  name: "Sorteio"
+};
 </script>
 
 <style scoped>
-
+* {
+  font-family: Bebas Neue, cursive;
+}
 .info h1 {
-    font-family: Bebas Neue, cursive;
-    text-decoration: underline;
-    text-align: center;
+  text-decoration: underline;
 }
 
-.info h2 {
-    font-family: Bebas Neue, cursive;
-    margin: 10px 0 0 30px;
-}
-
-.info .perguntas {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.info .resposta {
-    display: flex;
-    margin-left: 30px;
-    flex-wrap: wrap;
-}
-
-.info .resposta h4 {
-    font-family: Bebas Neue, cursive;
-    font-size: 25px;
-    position: relative;
-    bottom: 10px;
-    text-align: justify;
-    
-}
-.info .resposta p {
-    font-family: Bebas Neue, cursive;
-    font-size: 20px;
-    margin-left: 10px;
-    text-align: justify;
+.faq h2 {
+  min-width: 300px;
 }
 
 .image {
-    background-image: url(../assets/fundoroxo.svg);
-    background-position: center -300px;
-    box-shadow: 3px 3px 30px #000000;
+  background-image: url(../assets/fundoroxo.svg);
+  background-position: center -300px;
+  box-shadow: 3px 3px 30px #000000;
 }
 
-.sorteio h2 {
-    display: flex;
-    /* margin: 20px; */
-    justify-content: center;
-    color: #ffffff;
-    font-family: Bebas Neue, cursive;
-    font-size: 68px;
-    text-shadow: 3px 3px 30px #000000;
-}
-
-.cards-list {
-  z-index: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.sorteio h1 {
+  font-size: 68px;
+  text-shadow: 3px 3px 30px #000000;
 }
 
 .cards-list .card {
@@ -135,7 +101,8 @@ export default {
   width: 200px;
   height: 200px;
   border-radius: 150px;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
   cursor: pointer;
   transition: 0.4s;
 }
@@ -153,42 +120,9 @@ export default {
   object-fit: cover;
 }
 
-.card .card_title {
-  text-align: center;
-  border-radius: 0px 0px 40px 40px;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: -80px;
-  height: 40px;
-  text-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25);
-}
-
 .card:hover {
   transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-    -5px -5px 30px 15px rgba(0,0,0,0.22);
-}
-
-.title-white {
-  color: white;
-}
-
-.title-black {
-  color: black;
-}
-
-@media all and (max-width: 500px) {
-  .card-list {
-    /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 600px) {
-.info .perguntas {
-    display: flex;
-    justify-content: unset;
-}
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
 </style>

@@ -1,16 +1,15 @@
 <template>
-  <div>
+  <div class="w-100">
     <NavBar />
 
     <Event />
 
     <Cronograma />
 
-    <Campeonato />  
+    <Campeonato />
 
     <Sorteio />
     <!-- <Submit /> -->
-    
   </div>
 </template>
 
@@ -20,7 +19,7 @@ import Event from "./Header.vue";
 import Cronograma from "./Cronograma.vue";
 import Campeonato from "./Campeonato.vue";
 // import Submit from "./Submit.vue"
-import Sorteio from "./Sorteio.vue"
+import Sorteio from "./Sorteio.vue";
 
 export default {
   name: "Secomp",
@@ -29,13 +28,12 @@ export default {
     Event,
     Cronograma,
     Campeonato,
-    Sorteio,
+    Sorteio
     // Submit,
-  },
+  }
 };
 </script>
 
 <style lang="scss">
 @import "../assets/styles/custom.scss";
-
 </style>

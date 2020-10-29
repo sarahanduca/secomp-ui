@@ -1,14 +1,32 @@
 <template>
-  <b-container>
-    <div class="event">
-      <div class="title">
-        <h1> O EVENTO </h1>
-        <h2 v-if="!expired"> {{displayDays}} DIAS E {{displayHours}} HORAS</h2>
+  <b-container class="w-100">
+    <b-row align-h="center" class="w-100 mx-0">
+      <b-col>
+        <h1 class="text-center">O EVENTO</h1>
+        <h2 class="text-center" v-if="!expired">
+          {{ displayDays }} DIAS E {{ displayHours }} HORAS
+        </h2>
         <h2 v-else>Aproveite a SECOMP</h2>
-      </div>
-      
-      <p>A Semana da Computação é um evento Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. A Semana da Computação é um evento Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-    </div>  
+
+        <p>
+          A Semana da Computação é um evento Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum. A Semana da Computação é um evento Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+        </p>
+      </b-col>
+    </b-row>
   </b-container>
 </template>
 
@@ -21,14 +39,14 @@ export default {
   }),
   computed: {
     _seconds: () => 1000,
-    _minutes(){
+    _minutes() {
       return this._seconds * 60;
     },
-    _hours(){
-      return this._minutes *60;
+    _hours() {
+      return this._minutes * 60;
     },
-    _days(){
-      return this._hours *24;
+    _days() {
+      return this._hours * 24;
     }
   },
   mounted() {
@@ -36,16 +54,16 @@ export default {
   },
   methods: {
     formatNum: num => (num < 10 ? "0" + num : num),
-    showRemaining(){
+    showRemaining() {
       const timer = setInterval(() => {
         const now = new Date();
         const end = new Date(2020, 10, 1, 0, 0, 0, 0);
         const distance = end.getTime() - now.getTime();
 
-        if(distance < 0){
+        if (distance < 0) {
           clearInterval(timer);
           this.expired = true;
-          return
+          return;
         }
 
         const days = Math.floor(distance / this._days);
@@ -53,63 +71,25 @@ export default {
 
         this.displayHours = this.formatNum(hours);
         this.displayDays = this.formatNum(days);
-      })
+      });
     }
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
-
-.event {
-  background-color: #151515;
-}
-
-.event .title {
-  display: flex;
+<style scoped>
+* {
   font-family: Bebas Neue, cursive;
 }
-.event .title h1 {
+h1 {
+  font-size: 64px;
   color: #296016;
-  position: relative;
-  left: 40px;
-  padding-top: 40px;
-  font-size: 78px;
 }
-
-.event .title h2 {
-  color: #dddddd;
-  margin-left: auto;
-  position: relative;
-  right: 50px;
-  font-size: 72px;
-}
-
-.event p {
+p {
   color: #7a7a7a;
-  margin: 20px;
-  text-align: justify;
-  font-family: Bebas Neue, cursive;
-  font-size: 20px;
-  
 }
-
-@media (max-width: 988px){
-  .event .title h2 {
-    font-size: 52px;
-  } 
-}
-
-@media (max-width: 600px){
-  .event .title h2 {
-    font-size: 30px;
-    position: relative;
-    left: 5px;
-  } 
-
-  .event .title h1 {
-    font-size: 58px;
-  }
+h2 {
+  color: #dddddd;
 }
 </style>

@@ -1,5 +1,19 @@
 <template>
   <div id="app">
+    <b-button variant="light" v-b-modal.incricao to="inscricao">
+      Inscrever-se
+    </b-button>
+    <b-modal
+      class="h-100"
+      id="incricao"
+      title="Inscrição"
+      hide-footer
+      scrollable
+      @hidden="increveShow"
+    >
+      <router-view></router-view>
+    </b-modal>
+
     <Event title="O EVENTO" />
 
     <Cronograma id="cronograma" />
@@ -19,13 +33,18 @@ export default {
     Event,
     Cronograma,
     Campeonato
+  },
+  methods: {
+    increveShow: function() {
+      this.$router.push("/");
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../../assets/styles/custom.scss";
-div {
-  background: $secomp-preto;
-}
+// div {
+//   background: $secomp-preto;
+// }
 </style>

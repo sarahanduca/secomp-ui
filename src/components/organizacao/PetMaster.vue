@@ -1,5 +1,5 @@
 <template>
-  <div class="h-100">
+  <div class="h-100 petmaster">
     <b-navbar toggleable="lg" type="dark" variant="success" sticky>
       <b-navbar-brand to="/petmaster">
         <img src="../../assets/secompBranca.png" width="45" alt="Logo SECOMP" />
@@ -40,4 +40,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.petmaster {
+  background-color: white;
+}
+</style>

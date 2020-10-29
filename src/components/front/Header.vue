@@ -1,63 +1,95 @@
 <template>
-  <b-container id="head">
-    <main>
-      <h1>{{ title }}</h1>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti sed
-        ullam fuga, perferendis possimus alias tempora nisi cupiditate labore
-        dignissimos quisquam aut eos eius repellendus at, enim, unde optio
-        inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Enim nemo facere totam repellat dicta dolor cupiditate recusandae,
-        corporis dolore nihil maxime ipsa eius delectus nesciunt neque! Mollitia
-        quae ab temporibus! Maiores aliquam odit corporis vel quasi, voluptate,
-        blanditiis earum quas libero voluptatibus ratione unde accusantium, illo
-        a hic nam dignissimos? A, praesentium exercitationem est explicabo
-        laudantium modi aliquid ad laborum. Reiciendis autem deserunt accusamus
-        praesentium quibusdam a quidem, voluptatem eaque numquam reprehenderit
-        cum magnam error vero aperiam dolorem facilis excepturi soluta minus
-        deleniti esse. Cumque aliquid veritatis error. Lorem ipsum dolor, sit
-        amet consectetur adipisicing elit. Nulla provident magni ex quasi,
-        magnam esse neque blanditiis? Facilis quidem aspernatur veritatis quod
-        doloribus expedita ipsa repudiandae. Repellat illo minima voluptatum.
-        Placeat omnis blanditiis accusantium dolores voluptatum officia earum
-        incidunt, dolore voluptatibus atque maxime quisquam sequi iure a dolorum
-        pariatur ea aliquid possimus quasi qui rerum? Necessitatibus, atque
-        repudiandae.
-      </p>
-    </main>
+  <b-container class="w-100">
+    <b-row align-h="center" class="w-100 mx-0">
+      <b-col>
+        <h1 class="text-center">O EVENTO</h1>
+        <h2 class="text-center" v-if="!expired">
+          {{ displayDays }} DIAS E {{ displayHours }} HORAS
+        </h2>
+        <h2 v-else>Aproveite a SECOMP</h2>
+
+        <p>
+          A Semana da Computação é um evento Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum. A Semana da Computação é um evento Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+        </p>
+      </b-col>
+    </b-row>
   </b-container>
 </template>
 
 <script>
 export default {
-  name: "Event",
-  props: {
-    title: String
+  data: () => ({
+    displayDays: 0,
+    displayHours: 0,
+    expired: false
+  }),
+  computed: {
+    _seconds: () => 1000,
+    _minutes() {
+      return this._seconds * 60;
+    },
+    _hours() {
+      return this._minutes * 60;
+    },
+    _days() {
+      return this._hours * 24;
+    }
+  },
+  mounted() {
+    this.showRemaining();
+  },
+  methods: {
+    formatNum: num => (num < 10 ? "0" + num : num),
+    showRemaining() {
+      const timer = setInterval(() => {
+        const now = new Date();
+        const end = new Date(2020, 10, 1, 0, 0, 0, 0);
+        const distance = end.getTime() - now.getTime();
+
+        if (distance < 0) {
+          clearInterval(timer);
+          this.expired = true;
+          return;
+        }
+
+        const days = Math.floor(distance / this._days);
+        const hours = Math.floor((distance % this._days) / this._hours);
+
+        this.displayHours = this.formatNum(hours);
+        this.displayDays = this.formatNum(days);
+      });
+    }
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Varela+Round&display=swap");
-@import "../../assets/styles/custom.scss";
-
-main {
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 5rem;
-  height: 100vh;
+<style scoped>
+* {
+  font-family: Bebas Neue, cursive;
 }
 h1 {
-  font-family: $titulo;
-  color: $secomp-verde;
   font-size: 64px;
+  color: #296016;
 }
-
-main p {
-  font-family: $texto;
-  font-size: 1.6rem;
-  padding-top: 1rem;
-  height: 250px;
+p {
+  color: #7a7a7a;
+}
+h2 {
+  color: #dddddd;
 }
 </style>

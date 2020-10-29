@@ -1,7 +1,7 @@
 <template>
   <div class="h-100" id="login">
     <b-row
-      class="h-100 mx-0 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5 px-xl-5 px-lg-4"
+      class="h-100 text-center mx-0 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5 px-xl-5 px-lg-4"
       align-h="center"
       align-v="center"
     >
@@ -88,6 +88,7 @@ export default {
   background-image: url("../../assets/fundoHeader.svg");
   background-repeat: repeat-x;
   background-position: center -300px;
+  background-color: white;
 }
 .col {
   max-width: 500px;

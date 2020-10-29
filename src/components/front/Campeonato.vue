@@ -1,39 +1,221 @@
 <template>
-  <b-container fluid class="camp">
-    <h3>Campeonato</h3>
+  <b-container>
+    <b-row class="text-center w-100 mx-0" align-h="center">
+      <b-col>
+        <h1 class="text-light text-center tittle">Campeonato</h1>
+      </b-col>
+    </b-row>
+    <b-row class="w-100 mx-0">
+      <b-col class="cards-list">
+        <div class="card 1">
+          <div class="card_image"><img src="../../assets/valorant.png" /></div>
+          <div class="card_title"></div>
+          <h2>VALORANT</h2>
+        </div>
+      </b-col>
+      <b-col class="cards-list">
+        <div class="card 2">
+          <div class="card_image">
+            <img src="../../assets/leagueoflegends.png" />
+          </div>
+          <div class="card_title"></div>
+          <h2>LEAGUE OF LEGENDS</h2>
+        </div>
+      </b-col>
+
+      <b-col class="cards-list">
+        <div class="card 3">
+          <div class="card_image">
+            <img src="../../assets/csgo.png" />
+          </div>
+          <div class="card_title"></div>
+          <h2>CS:GO</h2>
+        </div>
+      </b-col>
+    </b-row>
+    <b-row align-h="center" class="mb-5 w-100 mx-0">
+      <b-col class="info">
+        <h2 class="mt-5">CAMPEONATO DE JOGOS</h2>
+        <h4>COMO E QUEM PODE PARTICIPAR?</h4>
+        <p>
+          A Semana da Computação é um evento Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum. A Semana da Computação é um evento Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+        </p>
+      </b-col>
+    </b-row>
+    <b-row align-h="center" class="mx-0 w-100">
+      <div class="title-award">
+        <h2>PRÊMIOS</h2>
+        <img src="../../assets/Rectangle.png" alt="" />
+      </div>
+    </b-row>
+    <b-row align-h="center" class="mx-0 w-100">
+      <b-col class="cards-list-award">
+        <div class="card 5">
+          <div class="card_image"><img src="../../assets/steam50.png" /></div>
+          <div class="card_title"></div>
+          <div class="podio text-center">
+            <h4>1° Colocado - R$ <span>50,00</span> Steam</h4>
+          </div>
+        </div>
+      </b-col>
+      <b-col class="cards-list-award">
+        <div class="card 4">
+          <div class="card_image"><img src="../../assets/steam20.png" /></div>
+          <div class="card_title"></div>
+          <div class="podio text-center">
+            <h4>2° Colocado - R$ <span>20,00</span> Steam</h4>
+          </div>
+        </div>
+      </b-col>
+    </b-row>
+    <b-row align-h="center" class="mx-0 w-100 text-light text-center">
+      <b-col>
+        <p>*Para mais detalhes confira nossas redes sociais*</p>
+      </b-col>
+    </b-row>
   </b-container>
 </template>
 
 <script>
-export default {
-  name: "Cronograma"
-};
+export default {};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Varela+Round&display=swap");
-@import "../../assets/styles/custom.scss";
-
-::before .camp {
-  background: $secomp-verde;
+<style scoped>
+* {
+  font-family: Bebas Neue, cursive;
 }
-
-.camp {
-  font-family: "Bebas Neue", cursive;
-  color: #ffffff;
-  background-image: url(../../assets/fundoCamp.svg);
-  background-size: cover;
+.tittle {
+  font-size: 64px;
+}
+.title-award h2 {
+  color: #a358ce;
+  font-size: 64px;
+}
+.title-award img {
   position: relative;
-  top: -6rem;
-  background-repeat: no-repeat;
-  height: 1600px;
-  margin: 0 auto;
+  left: 10px;
+  top: 15px;
+  width: 69px;
+  height: 65px;
 }
 
-h3 {
-  font-size: 48px;
-  margin-right: 20rem;
-  padding: 4rem;
+.title-award {
+  display: flex;
+  justify-content: center;
+}
+
+.info h2 {
+  color: #a358ce;
+  font-size: 64px;
+}
+
+.info h4 {
+  font-size: 36px;
+  color: #878787;
+}
+
+.info p {
+  color: #7a7a7a;
+}
+
+.podio h4 {
+  color: #7a7a7a;
+  font-size: 25px;
+  position: relative;
+  top: 28px;
+}
+.podio span {
+  color: #a358ce;
+}
+
+.cards-list h2 {
+  color: #7a7a7a;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+}
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cards-list-award {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cards-list-award .card {
+  margin: 30px auto;
+  width: 300px;
+  height: 450px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.cards-list .card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+  text-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
 </style>

@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "App",
+  name: "App"
 };
 </script>
 
@@ -14,17 +14,19 @@ export default {
 @import "./assets/styles/custom.scss";
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  -moz-osx-font-smoothing: grayscale; */
+  /* text-align: center; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   height: 100%;
+  background-color: #151515;
 }
 html,
 body {
+  background-color: #151515;
   height: 100%;
   font-family: $titulo, Avenir, Helvetica, Arial, sans-serif;
 }

@@ -1,50 +1,39 @@
 <template>
-  <div id="app">
-    <b-button variant="light" v-b-modal.incricao to="inscricao">
-      Inscrever-se
-    </b-button>
-    <b-modal
-      class="h-100"
-      id="incricao"
-      title="Inscrição"
-      hide-footer
-      scrollable
-      @hidden="increveShow"
-    >
-      <router-view></router-view>
-    </b-modal>
+  <div class="w-100">
+    <NavBar />
 
-    <Event title="O EVENTO" />
+    <Event />
 
-    <Cronograma id="cronograma" />
+    <Cronograma />
 
-    <Campeonato id="campeonato" />
+    <Campeonato />
+
+    <Sorteio />
+    <!-- <Submit /> -->
   </div>
 </template>
 
 <script>
+import NavBar from "./NavBar.vue";
 import Event from "./Header.vue";
 import Cronograma from "./Cronograma.vue";
 import Campeonato from "./Campeonato.vue";
+// import Submit from "./Submit.vue"
+import Sorteio from "./Sorteio.vue";
 
 export default {
   name: "Secomp",
   components: {
+    NavBar,
     Event,
     Cronograma,
-    Campeonato
-  },
-  methods: {
-    increveShow: function() {
-      this.$router.push("/");
-    }
+    Campeonato,
+    Sorteio
+    // Submit,
   }
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../../assets/styles/custom.scss";
-// div {
-//   background: $secomp-preto;
-// }
 </style>

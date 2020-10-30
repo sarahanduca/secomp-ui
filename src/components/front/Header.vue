@@ -57,14 +57,12 @@ export default {
     daysLeft() {
       const today = new Date().getTime();
       const delta = this.secomp - today;
-      console.log(this.secomp);
 
       return Math.floor(delta / 86_400_000);
     },
     hoursLeft() {
       const today = new Date().getTime();
       const delta = this.secomp - today;
-      console.log(this.secomp);
 
       return Math.floor((delta % 86_400_000) / 3_600_000);
     },

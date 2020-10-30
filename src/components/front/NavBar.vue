@@ -7,10 +7,13 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto text-center">
-        <b-nav-item to="/">PALESTRAS</b-nav-item>
-        <b-nav-item to="/">WORKSHOPS</b-nav-item>
-        <b-nav-item to="/">CAMPEONATO</b-nav-item>
-        <b-nav-item to="/">SORTEIO</b-nav-item>
+        <b-nav-item to="/" @click="scroll('#div-cronograma')">
+          CRONOGRAMA
+        </b-nav-item>
+        <b-nav-item to="/" @click="scroll('#campeonato')"
+          >CAMPEONATO</b-nav-item
+        >
+        <b-nav-item to="/" @click="scroll('#sorteio')">SORTEIO</b-nav-item>
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto">
         <b-button variant="dark">Inscreva-se</b-button>
@@ -21,7 +24,12 @@
 
 <script>
 export default {
-  name: "NavBar"
+  name: "NavBar",
+  methods: {
+    scroll(elem) {
+      this.$parent.$el.querySelector(elem).scrollIntoView();
+    }
+  }
 };
 </script>
 
@@ -34,65 +42,4 @@ export default {
 .bg-success {
   background-color: #296016 !important;
 }
-// div {
-//   background-color: ;
-// }
-// .navbar {
-//   overflow: hidden;
-//   background-color: #296016;
-//   display: flex;
-//   align-items: center;
-//   width: 80%;
-//   margin: auto;
-// }
-
-// .menuMiddle {
-//   display: flex;
-//   background-color: #296016;
-//   margin: auto;
-// }
-
-// .menuMiddle p {
-//   font-size: 30px;
-//   font-family: Bebas Neue, cursive;
-//   color: #ffffff;
-//   padding: 0px 20px;
-// }
-
-// .navbar .inscrever p {
-//   color: #ffffff;
-//   font-family: Bebas Neue, cursive;
-//   font-size: 30px;
-//   position: relative;
-//   right: 15px;
-// }
-
-// .navbar .inscrever {
-//   background-color: #296016;
-// }
-
-// @media (max-width: 1000px) {
-//   .menuMiddle p {
-//     font-size: 20px;
-//   }
-
-//   .navbar .inscrever p {
-//     font-size: 20px;
-//   }
-// }
-
-// @media (max-width: 781px) {
-//   .menuMiddle {
-//     display: none;
-//   }
-
-//   .inscrever {
-//     display: none;
-//   }
-
-//   img {
-//     position: relative;
-//     left: 43%;
-//   }
-// }
 </style>

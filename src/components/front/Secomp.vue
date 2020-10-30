@@ -6,9 +6,9 @@
 
     <Cronograma />
 
-    <Campeonato />
+    <Campeonato id="campeonato" />
 
-    <Sorteio />
+    <Sorteio id="sorteio" />
     <!-- <Submit /> -->
   </div>
 </template>

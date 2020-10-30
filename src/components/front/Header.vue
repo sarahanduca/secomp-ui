@@ -1,10 +1,10 @@
 <template>
   <div id="evento">
     <b-container class="w-100">
-      <b-row align-h="right">
+      <b-row align-h="end" class="w-100 mx-0">
         <b-col>
           <h2 class="text-right" v-if="!expired">
-            {{ displayDays }} DIAS E {{ displayHours }} HORAS
+            {{ daysLeft }} DIAS E {{ hoursLeft }} HORAS
           </h2>
           <h2 v-else>Aproveite a SECOMP</h2>
         </b-col>
@@ -46,46 +46,30 @@
 
 <script>
 export default {
-  data: () => ({
-    displayDays: 0,
-    displayHours: 0,
-    expired: false
-  }),
+  name: "Header",
+  data() {
+    return {
+      secomp: new Date(1605495600000),
+      hours: "2"
+    };
+  },
   computed: {
-    _seconds: () => 1000,
-    _minutes() {
-      return this._seconds * 60;
+    daysLeft() {
+      const today = new Date().getTime();
+      const delta = this.secomp - today;
+      console.log(this.secomp);
+
+      return Math.floor(delta / 86_400_000);
     },
-    _hours() {
-      return this._minutes * 60;
+    hoursLeft() {
+      const today = new Date().getTime();
+      const delta = this.secomp - today;
+      console.log(this.secomp);
+
+      return Math.floor((delta % 86_400_000) / 3_600_000);
     },
-    _days() {
-      return this._hours * 24;
-    }
-  },
-  mounted() {
-    this.showRemaining();
-  },
-  methods: {
-    formatNum: num => (num < 10 ? "0" + num : num),
-    showRemaining() {
-      const timer = setInterval(() => {
-        const now = new Date();
-        const end = new Date(2020, 10, 1, 0, 0, 0, 0);
-        const distance = end.getTime() - now.getTime();
-
-        if (distance < 0) {
-          clearInterval(timer);
-          this.expired = true;
-          return;
-        }
-
-        const days = Math.floor(distance / this._days);
-        const hours = Math.floor((distance % this._days) / this._hours);
-
-        this.displayHours = this.formatNum(hours);
-        this.displayDays = this.formatNum(days);
-      });
+    expired() {
+      return this.secomp < Date.now();
     }
   }
 };
@@ -113,11 +97,4 @@ h2 {
 #evento {
   padding-top: 6em;
 }
-/* #desc {
-  z-index: 99;
-  background-image: url("../../assets/losango.svg");
-  background-repeat: no-repeat;
-  background-position-y: -210px;
-  background-position-x: -150px;
-} */
 </style>

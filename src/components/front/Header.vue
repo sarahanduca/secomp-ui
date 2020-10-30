@@ -30,7 +30,6 @@
             FALTAM <span>{{ daysLeft }}</span> DIAS E
             <span>{{ hoursLeft }}</span> HORAS
           </h2>
-          <h2 v-else>Aproveite a SECOMP</h2>
         </b-col>
       </b-row>
     </b-container>
@@ -104,7 +103,7 @@ h2 span {
 #evento {
   background-image: url("../../assets/los.svg");
   background-repeat: no-repeat;
-  background-position-x: 4px;
-  background-position-y: -14px;
+  background-position-x: -7px;
+  background-position-y: -54px;
 }
 </style>

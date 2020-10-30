@@ -16,7 +16,6 @@
           >
             <b-tab title="16/11" active title-link-class="text-light">
               <b-table
-                striped
                 :items="d16"
                 :fields="fields"
                 class="text-light text-center"
@@ -24,7 +23,6 @@
             </b-tab>
             <b-tab title="17/11" title-link-class="text-light">
               <b-table
-                striped
                 :items="d17"
                 :fields="fields"
                 class="text-light text-center"
@@ -32,7 +30,6 @@
             </b-tab>
             <b-tab title="18/11" title-link-class="text-light">
               <b-table
-                striped
                 :items="d18"
                 :fields="fields"
                 class="text-light text-center"
@@ -40,7 +37,6 @@
             </b-tab>
             <b-tab title="19/11" title-link-class="text-light">
               <b-table
-                striped
                 :items="d19"
                 :fields="fields"
                 class="text-light text-center"
@@ -48,25 +44,16 @@
             </b-tab>
             <b-tab title="20/11" title-link-class="text-light">
               <b-table
-                striped
                 :items="d20"
                 :fields="fields"
                 class="text-light text-center"
               ></b-table>
             </b-tab>
             <b-tab title="21/11" title-link-class="text-light">
-              <b-table
-                striped
-                :items="d21"
-                class="text-light text-center"
-              ></b-table>
+              <b-table :items="d21" class="text-light text-center"></b-table>
             </b-tab>
             <b-tab title="22/11" title-link-class="text-light">
-              <b-table
-                striped
-                :items="d22"
-                class="text-light text-center"
-              ></b-table>
+              <b-table :items="d22" class="text-light text-center"></b-table>
             </b-tab>
           </b-tabs>
         </b-col>

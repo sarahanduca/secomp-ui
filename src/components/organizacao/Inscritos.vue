@@ -121,9 +121,16 @@ export default {
 </script>
 
 <style scoped>
+* {
+  font-family: Avenir, Helvetica, Arial, sans-serif !important;
+}
 table,
 td,
 th {
   text-align: left;
+}
+.row,
+.col {
+  background-color: white;
 }
 </style>

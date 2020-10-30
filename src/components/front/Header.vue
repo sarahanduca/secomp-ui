@@ -1,33 +1,47 @@
 <template>
-  <b-container class="w-100">
-    <b-row align-h="center" class="w-100 mx-0">
-      <b-col>
-        <h1 class="text-center">O EVENTO</h1>
-        <h2 class="text-center" v-if="!expired">
-          {{ displayDays }} DIAS E {{ displayHours }} HORAS
-        </h2>
-        <h2 v-else>Aproveite a SECOMP</h2>
+  <div id="evento">
+    <b-container class="w-100">
+      <b-row align-h="right">
+        <b-col>
+          <h2 class="text-right" v-if="!expired">
+            {{ displayDays }} DIAS E {{ displayHours }} HORAS
+          </h2>
+          <h2 v-else>Aproveite a SECOMP</h2>
+        </b-col>
+      </b-row>
+      <b-row class="w-100 mx-0">
+        <b-col id="desc">
+          <h1 class="mb-5">O EVENTO</h1>
 
-        <p>
-          A Semana da Computação é um evento Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum. A Semana da Computação é um evento Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
-        </p>
-      </b-col>
-    </b-row>
-  </b-container>
+          <p>
+            A Semana da Computação é um evento Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. A Semana da Computação é um evento Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+        </b-col>
+      </b-row>
+    </b-container>
+    <svg
+      id="top-section-border"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <polygon fill="#296016" points="0,101 0,0 101,101" />
+    </svg>
+  </div>
 </template>
 
 <script>
@@ -92,4 +106,18 @@ p {
 h2 {
   color: #dddddd;
 }
+#top-section-border {
+  width: 100%;
+  height: 5em;
+}
+#evento {
+  padding-top: 6em;
+}
+/* #desc {
+  z-index: 99;
+  background-image: url("../../assets/losango.svg");
+  background-repeat: no-repeat;
+  background-position-y: -210px;
+  background-position-x: -150px;
+} */
 </style>

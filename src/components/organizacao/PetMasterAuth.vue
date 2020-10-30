@@ -84,6 +84,9 @@ export default {
 </script>
 
 <style scoped>
+* {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
 #login {
   background-image: url("../../assets/fundoHeader.svg");
   background-repeat: repeat-x;

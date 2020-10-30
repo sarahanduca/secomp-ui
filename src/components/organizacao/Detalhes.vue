@@ -96,4 +96,13 @@ export default {
   }
 };
 </script>
-<style></style>
+<style scoped>
+.row,
+.col {
+  background-color: white;
+}
+* {
+  text-align: center;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+</style>

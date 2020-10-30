@@ -44,4 +44,11 @@ export default {
 .petmaster {
   background-color: white;
 }
+* {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+.row,
+.col {
+  background-color: white;
+}
 </style>

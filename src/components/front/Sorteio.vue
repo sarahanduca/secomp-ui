@@ -1,7 +1,7 @@
 <template>
   <div class="image">
     <b-container>
-      <b-row class="w-100 mx-0 text-center text-light" align-h="center">
+      <b-row class="w-100 mx-0 text-light" align-h="center">
         <b-col class="sorteio">
           <h1>Sorteios</h1>
         </b-col>
@@ -29,7 +29,7 @@
       </b-row>
       <b-row class="w-100 mx-0 info">
         <b-col>
-          <h1 class="text-center text">FAQ</h1>
+          <h1 class="text-center">FAQ</h1>
         </b-col>
       </b-row>
 
@@ -78,6 +78,7 @@ export default {
 <style scoped>
 * {
   font-family: Bebas Neue, cursive;
+  color: #151515;
 }
 .info h1 {
   text-decoration: underline;
@@ -88,14 +89,12 @@ export default {
 }
 
 .image {
-  background-image: url(../../assets/fundoroxo.svg);
-  background-position: center -300px;
-  box-shadow: 3px 3px 30px #000000;
+  background-color: #296016;
 }
 
 .sorteio h1 {
   font-size: 68px;
-  text-shadow: 3px 3px 30px #000000;
+  color: #151515;
 }
 
 .cards-list .card {

@@ -30,4 +30,10 @@ body {
   height: 100%;
   font-family: $titulo, Avenir, Helvetica, Arial, sans-serif;
 }
+.bg-dark {
+  background-color: #151515 !important;
+}
+.btn-dark {
+  background-color: #151515 !important;
+}
 </style>

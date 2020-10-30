@@ -184,4 +184,7 @@ h1 {
 .bg-dark {
   background-color: #151515 !important;
 }
+a.bg-dark:focus {
+  background-color: #151515 !important;
+}
 </style>

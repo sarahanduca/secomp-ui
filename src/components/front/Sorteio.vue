@@ -85,7 +85,7 @@ export default {
 }
 
 .faq h2 {
-  min-width: 300px;
+  /* min-width: 300px; */
 }
 
 .image {

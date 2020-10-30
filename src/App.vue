@@ -24,6 +24,9 @@ export default {
   height: 100%;
   background-color: #151515;
 }
+svg {
+  margin: -1px;
+}
 html,
 body {
   background-color: #151515;

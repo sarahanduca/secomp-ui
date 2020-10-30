@@ -1,17 +1,9 @@
 <template>
-  <div id="evento">
-    <b-container class="w-100">
-      <b-row align-h="end" class="w-100 mx-0">
-        <b-col>
-          <h2 class="text-right" v-if="!expired">
-            {{ daysLeft }} DIAS E {{ hoursLeft }} HORAS
-          </h2>
-          <h2 v-else>Aproveite a SECOMP</h2>
-        </b-col>
-      </b-row>
+  <div id="">
+    <b-container class="w-100" id="evento">
       <b-row class="w-100 mx-0">
         <b-col id="desc">
-          <h1 class="mb-5">O EVENTO</h1>
+          <h1 class="mb-5">O Evento</h1>
 
           <p>
             A Semana da Computação é um evento Lorem ipsum dolor sit amet,
@@ -30,6 +22,15 @@
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
             officia deserunt mollit anim id est laborum.
           </p>
+        </b-col>
+      </b-row>
+      <b-row align-h="end" class="w-100 mx-0 pt-4">
+        <b-col class="mr-5">
+          <h2 class="text-right " v-if="!expired">
+            FALTAM <span>{{ daysLeft }}</span> DIAS E
+            <span>{{ hoursLeft }}</span> HORAS
+          </h2>
+          <h2 v-else>Aproveite a SECOMP</h2>
         </b-col>
       </b-row>
     </b-container>
@@ -86,7 +87,11 @@ p {
   color: #7a7a7a;
 }
 h2 {
-  color: #dddddd;
+  font-size: 64px;
+  color: #aaaaaa;
+}
+h2 span {
+  color: #296016;
 }
 #top-section-border {
   width: 100%;
@@ -94,5 +99,12 @@ h2 {
 }
 #evento {
   padding-top: 6em;
+}
+
+#evento {
+  background-image: url("../../assets/los.svg");
+  background-repeat: no-repeat;
+  background-position-x: 4px;
+  background-position-y: -14px;
 }
 </style>

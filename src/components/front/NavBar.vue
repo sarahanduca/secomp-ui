@@ -16,7 +16,9 @@
         <b-nav-item to="/" @click="scroll('#sorteio')">SORTEIO</b-nav-item>
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto">
-        <b-button variant="dark">Inscreva-se</b-button>
+        <b-button variant="dark" v-b-modal.modal-inscricao to="/inscricao"
+          >Inscreva-se</b-button
+        >
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>

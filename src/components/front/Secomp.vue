@@ -2,6 +2,10 @@
   <div class="w-100">
     <NavBar />
 
+    <b-modal id="modal-inscricao" title="Inscrição" hide-footer>
+      <router-view></router-view>
+    </b-modal>
+
     <Event />
 
     <Cronograma />

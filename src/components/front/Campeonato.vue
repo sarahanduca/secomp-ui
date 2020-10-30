@@ -192,6 +192,7 @@ export default {};
     -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
   cursor: pointer;
   transition: 0.4s;
+  border: none;
 }
 
 .cards-list .card {
@@ -203,6 +204,7 @@ export default {};
     -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
   cursor: pointer;
   transition: 0.4s;
+  border: none;
 }
 
 .card .card_image {

@@ -59,6 +59,7 @@
           </p>
         </b-col>
       </b-row>
+
       <b-row align-h="center" class="mx-0 w-100">
         <b-col class="title-award">
           <h2>PRÊMIOS</h2>
@@ -89,6 +90,13 @@
           <p>*Para mais detalhes confira nossas redes sociais*</p>
         </b-col>
       </b-row>
+      <b-row align-h="center" class="w-100 mx-0 my-4 text-center">
+        <b-col>
+          <b-button id="campeonato-inscr" size="lg" variant="success" href="#"
+            >Inscrever minha equipe!</b-button
+          >
+        </b-col>
+      </b-row>
     </b-container>
     <svg
       id="top-section-border"
@@ -110,6 +118,13 @@ export default {};
 @import "../../assets/styles/custom.scss";
 * {
   font-family: $titulo;
+}
+#campeonato-inscr {
+  background-color: #a358ce;
+  border-color: #a358ce;
+}
+#campeonato-inscr:focus {
+  box-shadow: 0 0 0 0.2rem #a358ce;
 }
 #top-section-border {
   width: 100%;

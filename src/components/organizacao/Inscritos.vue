@@ -48,6 +48,13 @@
         <template #head(ra)="data">
           <span>{{ data.label.toUpperCase() }}</span>
         </template>
+        <template #cell(campeonatos)="data">
+          <span>{{
+            data.item.campeonatos
+              ? JSON.parse(data.item.campeonatos).join()
+              : data.item.campeonatos
+          }}</span>
+        </template>
       </b-table>
     </b-col>
   </b-row>
@@ -100,6 +107,7 @@ export default {
           { key: "nome", sortable: true },
           { key: "email", sortable: true },
           { key: "cpf", sortable: true },
+          { key: "campeonatos", sortable: true },
           { key: "ra", sortable: true }
         ];
       } else {
@@ -121,9 +129,6 @@ export default {
 </script>
 
 <style scoped>
-* {
-  font-family: Avenir, Helvetica, Arial, sans-serif !important;
-}
 table,
 td,
 th {

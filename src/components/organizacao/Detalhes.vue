@@ -16,6 +16,9 @@
           <b-col>{{ this.inscrito.cpf }}</b-col>
         </b-row>
         <b-row>
+          <b-col>{{ campeonatos }}</b-col>
+        </b-row>
+        <b-row>
           <b-col>{{ this.inscrito.ra }}</b-col>
         </b-row>
         <b-row class="mt-4">
@@ -58,6 +61,9 @@ export default {
           this.$router.push("/erro");
         });
       this.inscrito = data;
+      if (this.inscrito.campeonatos) {
+        this.inscrito.campeonatos = JSON.parse(data.campeonatos);
+      }
     } else {
       AuthService.logout();
       this.$router.push("/login");
@@ -91,6 +97,15 @@ export default {
       } else {
         AuthService.logout();
         this.$router.push("/login");
+      }
+    }
+  },
+  computed: {
+    campeonatos() {
+      if (this.inscrito && this.inscrito.campeonatos) {
+        return this.inscrito.campeonatos.join();
+      } else {
+        return null;
       }
     }
   }

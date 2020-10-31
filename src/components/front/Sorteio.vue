@@ -79,11 +79,6 @@ export default {
   text-transform: uppercase;
 }
 
-.faq h2 {
-  text-transform: uppercase;
-  /* min-width: 300px; */
-}
-
 .image {
   background-color: #296016;
 }

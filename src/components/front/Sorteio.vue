@@ -45,9 +45,9 @@
         <b-col>
           <h2>Quando e onde será o sorteio?</h2>
           <p>
-            Os sorteios serão realizados diaramente no <em>Instagram</em> do
-            evento (@secompuem) e os participantes serão avisados após as
-            palestras sobre os horários de sorteio do dia.
+            Os sorteios serão realizados diaramente no Instagram do evento
+            (@secompuem) e os participantes serão avisados após as palestras
+            sobre os horários de sorteio do dia.
           </p>
         </b-col>
         <b-col>

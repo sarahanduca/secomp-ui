@@ -138,11 +138,11 @@ export default {};
 
 .info h4 {
   font-size: 36px;
-  color: #878787;
+  color: #525252;
 }
 
 .info p {
-  color: #7a7a7a;
+  color: #aaaaaa;
 }
 
 .podio h4 {

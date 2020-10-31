@@ -80,7 +80,7 @@ h1 {
   color: #296016;
 }
 p {
-  color: #7a7a7a;
+  color: #aaaaaa;
 }
 h2 {
   font-size: 64px;

@@ -74,6 +74,22 @@
             </b-form-invalid-feedback>
           </b-form-group>
 
+          <b-form-group
+            id="input-group-campeonato"
+            label="Campeonatos"
+            label-for="checkboxes-camp"
+          >
+            <b-form-checkbox-group
+              v-model="form.campeonatos"
+              id="checkboxes-camp"
+              class="text-center mb-4"
+            >
+              <b-form-checkbox value="LOL">League of Legends</b-form-checkbox>
+              <b-form-checkbox value="Valorant">Valorant</b-form-checkbox>
+              <b-form-checkbox value="CS">Counter Strike: GO</b-form-checkbox>
+            </b-form-checkbox-group>
+          </b-form-group>
+
           <b-form-group class="text-center">
             <b-button type="submit" variant="success">
               Inscrever-se
@@ -106,7 +122,8 @@ export default {
         nome: "",
         email: "",
         cpf: "",
-        ra: ""
+        ra: "",
+        campeonatos: []
       },
       submited: false,
       response: null,

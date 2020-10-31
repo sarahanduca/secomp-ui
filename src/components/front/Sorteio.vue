@@ -83,11 +83,6 @@ export default {
 .info h1 {
   text-decoration: underline;
 }
-
-.faq h2 {
-  /* min-width: 300px; */
-}
-
 .image {
   background-color: #296016;
 }

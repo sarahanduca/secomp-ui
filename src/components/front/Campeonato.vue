@@ -60,10 +60,16 @@
         </b-col>
       </b-row>
       <b-row align-h="center" class="mx-0 w-100">
-        <div class="title-award">
-          <h2>PRÊMIOS</h2>
-          <img src="../../assets/Rectangle.png" alt="" />
-        </div>
+        <b-container>
+          <b-row align-v="center" align-h="center">
+            <b-col class="title-award" cols="6">
+              <h2 class="text-right">PRÊMIOS</h2>
+            </b-col>
+            <b-col>
+              <img src="../../assets/Rectangle.png" alt="" height="60px" />
+            </b-col>
+          </b-row>
+        </b-container>
       </b-row>
       <b-row align-h="center" class="mx-0 w-100">
         <b-col class="cards-list-award">
@@ -121,18 +127,6 @@ export default {};
 .title-award h2 {
   color: #a358ce;
   font-size: 64px;
-}
-.title-award img {
-  position: relative;
-  left: 10px;
-  top: 15px;
-  width: 69px;
-  height: 65px;
-}
-
-.title-award {
-  display: flex;
-  justify-content: center;
 }
 
 .info h2 {

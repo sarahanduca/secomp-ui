@@ -76,7 +76,7 @@ export default {
   color: #151515;
 }
 .info h1 {
-  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 .faq h2 {

@@ -107,9 +107,10 @@ export default {};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
+@import "../../assets/styles/custom.scss";
 * {
-  font-family: Bebas Neue, cursive;
+  font-family: $titulo;
 }
 #top-section-border {
   width: 100%;
@@ -117,6 +118,7 @@ export default {};
 }
 .tittle {
   font-size: 64px;
+  text-transform: uppercase;
 }
 .title-award h2 {
   color: #a358ce;

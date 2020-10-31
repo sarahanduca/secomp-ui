@@ -29,39 +29,33 @@
       </b-row>
       <b-row class="w-100 mx-0 info">
         <b-col>
-          <h1 class="text-center">FAQ</h1>
+          <h1 class="text-center pb-3">FAQ</h1>
         </b-col>
       </b-row>
 
       <b-row class="faq mx-0 w-100 text-center" align-h="center">
         <b-col>
-          <h2>QUEM PODE PARTICIPAR?</h2>
+          <h2>Quem pode participar?</h2>
           <p>
-            Ipsam sit itaque incidunt aliquid vero id iusto. Harum voluptatem
-            nihil delectus fugit ut id officiis. Natus nihil est numquam nihil
-            blanditiis alias ut. Vitae aut rerum omnis amet cumque. Vel harum
-            error et saepe exercitationem itaque voluptatum. Ex molestias ut
-            culpa autem
+            Qualquer inscrito da SECOMP está automaticamente participando do
+            sorteio, então fique atento ao Instagram do evento (@secompuem) onde
+            os nome serão sorteados.
           </p>
         </b-col>
         <b-col>
-          <h2>QUANDO QUE SERÁ O SORTEIO?</h2>
+          <h2>Quando e onde será o sorteio?</h2>
           <p>
-            Ipsam sit itaque incidunt aliquid vero id iusto. Harum voluptatem
-            nihil delectus fugit ut id officiis. Natus nihil est numquam nihil
-            blanditiis alias ut. Vitae aut rerum omnis amet cumque. Vel harum
-            error et saepe exercitationem itaque voluptatum. Ex molestias ut
-            culpa autem
+            Os sorteios serão realizados diaramente no <em>Instagram</em> do
+            evento (@secompuem) e os participantes serão avisados após as
+            palestras sobre os horários de sorteio do dia.
           </p>
         </b-col>
         <b-col>
-          <h2>COMO QUE ELE VAI SER ENTREGUE?</h2>
+          <h2>Como será entregue?</h2>
           <p>
-            Ipsam sit itaque incidunt aliquid vero id iusto. Harum voluptatem
-            nihil delectus fugit ut id officiis. Natus nihil est numquam nihil
-            blanditiis alias ut. Vitae aut rerum omnis amet cumque. Vel harum
-            error et saepe exercitationem itaque voluptatum. Ex molestias ut
-            culpa autem
+            Entraremos em contato com o vencedor para a retirada do prêmio na
+            UEM, quem não puder ir até a Universidade terá que arcar com o frete
+            de entrega.
           </p>
         </b-col>
       </b-row>
@@ -71,13 +65,14 @@
 
 <script>
 export default {
-  name: "Sorteio"
+  name: "Sorteio",
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "../../assets/styles/custom.scss";
 * {
-  font-family: Bebas Neue, cursive;
+  font-family: $titulo;
   color: #151515;
 }
 .info h1 {
@@ -85,6 +80,7 @@ export default {
 }
 
 .faq h2 {
+  text-transform: uppercase;
   /* min-width: 300px; */
 }
 
@@ -93,6 +89,7 @@ export default {
 }
 
 .sorteio h1 {
+  text-transform: uppercase;
   font-size: 68px;
   color: #151515;
 }
@@ -102,7 +99,7 @@ export default {
   width: 200px;
   height: 200px;
   border-radius: 150px;
-  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.041),
     -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
   cursor: pointer;
   transition: 0.4s;
@@ -124,7 +121,7 @@ export default {
 
 .card:hover {
   transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.075),
     -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
 </style>

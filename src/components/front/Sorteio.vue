@@ -66,7 +66,7 @@
       viewBox="0 0 100 100"
       preserveAspectRatio="none"
     >
-      <polygon fill="#aaaaaa" points="0,101 0,0 101,101" />
+      <polygon fill="#ffffff" points="0,101 0,0 101,101" />
     </svg>
   </div>
 </template>

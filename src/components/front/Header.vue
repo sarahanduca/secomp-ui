@@ -20,6 +20,21 @@
           </p>
         </b-col>
       </b-row>
+      <b-row
+        align-h="center"
+        class="d-flex d-lg-none w-100 mt-3 mx-0 text-center"
+        v-if="!expired"
+      >
+        <b-col>
+          <b-button
+            size="lg"
+            variant="success"
+            v-b-modal.modal-inscricao
+            to="/inscricao"
+            >Inscreva-se</b-button
+          >
+        </b-col>
+      </b-row>
       <b-row align-h="end" class="w-100 mx-0 pt-4">
         <b-col class="mr-5">
           <h2 class="text-right " v-if="!expired">
@@ -113,5 +128,12 @@ h2 span {
   background-repeat: no-repeat;
   background-position-x: -4px;
   background-position-y: -54px;
+}
+.btn-success {
+  border-color: #296016 !important;
+  background-color: #296016 !important;
+}
+.btn-success:focus {
+  box-shadow: 0 0 0 0.2rem #296016;
 }
 </style>

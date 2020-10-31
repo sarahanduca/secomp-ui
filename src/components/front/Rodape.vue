@@ -9,7 +9,7 @@
             </b-row>
             <b-row align-h="center" align-v="center">
               <a href="https://din.uem.br/pet"
-                ><b-img width="160" src="../../assets/PET.png" alt=""
+                ><b-img width="140" src="../../assets/PET.png" alt=""
               /></a>
               <a href="http://www.uem.br"
                 ><b-img width="110" src="../../assets/UEM.png" alt=""
@@ -31,7 +31,7 @@
             <b-row align-h="center" class="pt-3 w-100 mx-0"
               ><h2 class="">Patrocínio</h2>
             </b-row>
-            <b-row align-h="center" align-v="center" class="pt-3 w-100 mx-0">
+            <b-row align-h="center" align-v="center" class=" w-100 mx-0">
               <a href="https://www.mandic.com.br">
                 <b-img width="100" src="../../assets/mandic.png" alt=""
               /></a>
@@ -62,7 +62,7 @@ export default {};
 
 <style scoped>
 .background {
-  background-color: #aaaaaa;
+  background-color: #fff;
 }
 img {
   margin: 1em;

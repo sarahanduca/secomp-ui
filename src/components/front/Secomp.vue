@@ -13,6 +13,8 @@
     <Campeonato id="campeonato" />
 
     <Sorteio id="sorteio" />
+
+    <Rodape />
     <!-- <Submit /> -->
   </div>
 </template>
@@ -24,6 +26,7 @@ import Cronograma from "./Cronograma.vue";
 import Campeonato from "./Campeonato.vue";
 // import Submit from "./Submit.vue"
 import Sorteio from "./Sorteio.vue";
+import Rodape from "./Rodape.vue";
 
 export default {
   name: "Secomp",
@@ -32,7 +35,8 @@ export default {
     Event,
     Cronograma,
     Campeonato,
-    Sorteio
+    Sorteio,
+    Rodape
     // Submit,
   }
 };

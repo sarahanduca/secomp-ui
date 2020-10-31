@@ -60,12 +60,20 @@
         </b-col>
       </b-row>
     </b-container>
+    <svg
+      id="top-section-border"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <polygon fill="#aaaaaa" points="0,101 0,0 101,101" />
+    </svg>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Sorteio",
+  name: "Sorteio"
 };
 </script>
 

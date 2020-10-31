@@ -23,8 +23,16 @@
       <b-row align-h="end" class="w-100 mx-0 pt-4">
         <b-col class="mr-5">
           <h2 class="text-right " v-if="!expired">
-            FALTAM <span>{{ daysLeft }}</span> DIAS E
-            <span>{{ hoursLeft }}</span> HORAS
+            FALTAM <span>{{ daysLeft }}</span> DIA<span
+              class="light"
+              v-if="daysLeft != 1"
+              >S</span
+            >
+            E <span>{{ hoursLeft }}</span> HORA<span
+              class="light"
+              v-if="hoursLeft != 1"
+              >S</span
+            >
           </h2>
         </b-col>
       </b-row>
@@ -46,7 +54,7 @@ export default {
   data() {
     return {
       secomp: new Date(1605495600000),
-      hours: "2",
+      hours: "2"
     };
   },
   computed: {
@@ -64,8 +72,8 @@ export default {
     },
     expired() {
       return this.secomp < Date.now();
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -86,6 +94,9 @@ h2 {
   font-size: 64px;
   color: #aaaaaa;
 }
+.light {
+  color: #aaaaaa;
+}
 h2 span {
   color: #296016;
 }
@@ -100,7 +111,7 @@ h2 span {
 #evento {
   background-image: url("../../assets/los.svg");
   background-repeat: no-repeat;
-  background-position-x: -7px;
+  background-position-x: -4px;
   background-position-y: -54px;
 }
 </style>

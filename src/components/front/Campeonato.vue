@@ -60,16 +60,9 @@
         </b-col>
       </b-row>
       <b-row align-h="center" class="mx-0 w-100">
-        <b-container>
-          <b-row align-v="center" align-h="center">
-            <b-col class="title-award" cols="6">
-              <h2 class="text-right">PRÊMIOS</h2>
-            </b-col>
-            <b-col>
-              <img src="../../assets/Rectangle.png" alt="" height="60px" />
-            </b-col>
-          </b-row>
-        </b-container>
+        <b-col class="title-award">
+          <h2>PRÊMIOS</h2>
+        </b-col>
       </b-row>
       <b-row align-h="center" class="mx-0 w-100">
         <b-col class="cards-list-award">

@@ -1,7 +1,7 @@
 <template>
   <b-row class="h-100 w-100 mx-0" align-v="center">
     <b-col>
-      <b-container>
+      <b-container class="text-center text-light">
         <b-img src="../../assets/avatar.svg" width="100" class="mb-5" />
         <b-row align-v="center">
           <b-col>
@@ -23,7 +23,7 @@
         </b-row>
         <b-row class="mt-4">
           <b-col>
-            <b-btn variant="dark" @click="remove">Remover</b-btn>
+            <b-btn variant="danger" @click="remove">Remover</b-btn>
           </b-col>
         </b-row>
       </b-container>
@@ -111,13 +111,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-.row,
-.col {
-  background-color: white;
-}
-* {
-  text-align: center;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-}
-</style>
+<style scoped></style>

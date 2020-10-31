@@ -14,7 +14,7 @@
         ></b-form-input>
       </b-form-group>
     </b-col>
-    <b-col class="px-0 d-md-block" v-if="!isBusy">
+    <b-col class="px-0 d-md-block " v-if="!isBusy">
       <b-form-group class="my-2 mx-2 d-md-none">
         <b-form-input
           id="input-search-mobile"
@@ -27,6 +27,7 @@
         id="t-inscritos"
         caseFirst="upper"
         class="text-left"
+        style="background-color: #151515"
         hover
         :sort-by.sync="sortBy"
         :sort-desc.sync="sortDesc"
@@ -38,6 +39,7 @@
         selectable
         select-mode="single"
         @row-selected="rowSelected"
+        table-variant="dark"
       >
         <template #head(id)="data">
           <span>{{ data.label.toUpperCase() }}</span>
@@ -128,14 +130,9 @@ export default {
 };
 </script>
 
-<style scoped>
-table,
-td,
-th {
+<style lang="scss">
+#t-inscritos {
+  background-color: #151515 !important;
   text-align: left;
-}
-.row,
-.col {
-  background-color: white;
 }
 </style>

@@ -8,7 +8,7 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
+        <b-navbar-nav class="text-center">
           <b-nav-item to="/petmaster">Inscritos</b-nav-item>
           <b-nav-item to="/petmaster/disparos">Disparos</b-nav-item>
           <b-nav-item to="/petmaster/compositor">Compositor</b-nav-item>
@@ -41,14 +41,7 @@ export default {
 </script>
 
 <style scoped>
-.petmaster {
-  background-color: white;
-}
-* {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-}
-.row,
-.col {
-  background-color: white;
+.bg-success {
+  background-color: #296016 !important;
 }
 </style>

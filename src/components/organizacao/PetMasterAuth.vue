@@ -7,13 +7,13 @@
     >
       <b-col class="mx-0 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5 px-xl-5 px-lg-4">
         <b-img
-          src="../../assets/LogoSECOMP.png"
+          src="../../assets/secompBranca.svg"
           alt="logo SECOMP"
           class="mx-auto"
           width="114"
           height="100"
         />
-        <b-form @submit="onSubmit">
+        <b-form @submit="onSubmit" class="text-light">
           <b-form-group
             id="input-group-senha"
             label="Senha"
@@ -91,9 +91,15 @@ export default {
   background-image: url("../../assets/fundoHeader.svg");
   background-repeat: repeat-x;
   background-position: center -300px;
-  background-color: white;
 }
 .col {
   max-width: 500px;
+}
+.btn-success {
+  border-color: #296016 !important;
+  background-color: #296016 !important;
+}
+.btn-success:focus {
+  box-shadow: 0 0 0 0.2rem #296016;
 }
 </style>

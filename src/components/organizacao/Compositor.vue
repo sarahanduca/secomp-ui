@@ -1,7 +1,11 @@
 <template>
   <div class="h-100">
     <div class="h-100 d-none d-md-block" id="mail-editor"></div>
-    <b-row align-h="center" class="h-100 d-md-none" align-v="center">
+    <b-row
+      align-h="center"
+      class="h-100 d-md-none text-light text-center"
+      align-v="center"
+    >
       <b-col>
         <b-container>
           <b-img src="../../assets/warning.svg" width="100" class="mb-4" />

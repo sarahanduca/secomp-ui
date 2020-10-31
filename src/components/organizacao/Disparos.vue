@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-center text-light">
     Nessa tela seria possivel ver todos os emails agendados, bem como
     renderiza-los no compositor
   </div>

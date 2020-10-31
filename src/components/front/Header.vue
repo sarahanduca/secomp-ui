@@ -76,7 +76,7 @@ export default {
   font-family: $titulo;
 }
 h1 {
-  font-size: 64px;
+  font-size: 58px;
   color: #296016;
 }
 p {

@@ -78,8 +78,13 @@ export default {
       fields: ["hora", "palestra"],
       d16: [
         {
-          hora: "18h30 - 19h30",
+          hora: "18h30 - 20h00",
           palestra: "Abertura - Linnyer"
+        },
+        {
+          hora: "20h30 - 21h30",
+          palestra:
+            "Alan (eureka) Case EurekaLabs: Aplicação de IA para reconhecimento de câncer de mama."
         },
         {
           hora: "21h30 - 22h30",
@@ -96,8 +101,12 @@ export default {
           palestra: "Izabella Mundim Brito (Itaú Unibanco)"
         },
         {
-          hora: "20:30 - 21h30",
+          hora: "20h30 - 21h30",
           palestra: "Nathalia Borges (Dumativa)"
+        },
+        {
+          hora: "21h30 - 22h30",
+          palestra: "Guilherme Puglia (Google)"
         }
       ],
       d18: [
@@ -105,6 +114,11 @@ export default {
           hora: "18h30 - 19h30",
           palestra:
             "Mesa Redonda - Estêvão Gondim (Mandic), Vinicius Camargo (Amazon), Camila Stefani Innecco (DB1)"
+        },
+        {
+          hora: "19h30 - 20h30",
+          palestra:
+            "Pedro Rocha (aiqfome): aiqfome: de 30k a 2m de pedidos/mês, o que mudou?"
         }
       ],
       d19: [
@@ -117,6 +131,11 @@ export default {
           hora: "19h30 - 20h30",
           palestra:
             "Ricardo Satin (Matera): Modelos de recomendação para apoiar o processo de aprendizado "
+        },
+        {
+          hora: "20h30 - 21h30",
+          palestra:
+            "Thiago Moraes (aiqfome): da universidade para o mercado de trabalho"
         }
       ],
       d20: [
@@ -129,6 +148,11 @@ export default {
           hora: "19h30 - 20h30",
           palestra:
             "Ricardo Satin (Matera): LGPD e os cuidados do desenvolvedor"
+        },
+        {
+          hora: "20h30 - 21h30",
+          palestra:
+            "Felipe Cousin (aiqfome): aiqentrega: os desafios do lançamento de um novo produto no mercado"
         }
       ],
       d21: [

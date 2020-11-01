@@ -8,8 +8,8 @@
       </b-row>
       <b-row class="w-100 mx-0">
         <b-col class="cards-list">
-          <div class="card 1">
-            <div class="card_image">
+          <div class="card">
+            <div class="card_image" @click="vava">
               <img src="../../assets/valorant.png" />
             </div>
             <div class="card_title"></div>
@@ -18,7 +18,7 @@
         </b-col>
         <b-col class="cards-list">
           <div class="card 2">
-            <div class="card_image">
+            <div class="card_image" @click="lolzinho">
               <img src="../../assets/leagueoflegends.png" />
             </div>
             <div class="card_title"></div>
@@ -28,12 +28,17 @@
 
         <b-col class="cards-list">
           <div class="card 3">
-            <div class="card_image">
+            <div class="card_image" @click="csgo">
               <img src="../../assets/csgo.png" />
             </div>
             <div class="card_title"></div>
             <h2>CS:GO</h2>
           </div>
+        </b-col>
+      </b-row>
+      <b-row align-h="center" class="w-100 mx-0 my-4 text-center text-light">
+        <b-col>
+          <h3>Clique nos cards para se inscrever!</h3>
         </b-col>
       </b-row>
       <b-row align-h="center" class="mb-5 w-100 mx-0">
@@ -60,19 +65,21 @@
       <b-row align-h="center" class="mx-0 w-100">
         <b-col class="cards-list-award">
           <div class="card 5">
-            <div class="card_image"><img src="../../assets/steam50.png" /></div>
+            <div class="card_image"><img src="../../assets/breve.jpg" /></div>
             <div class="card_title"></div>
             <div class="podio text-center">
-              <h4>1° Colocado - R$ <span>50,00</span> Steam</h4>
+              <h4>A definir</h4>
+              <!-- <h4>1° Colocado - R$ <span>50,00</span> Steam</h4> -->
             </div>
           </div>
         </b-col>
         <b-col class="cards-list-award">
           <div class="card 4">
-            <div class="card_image"><img src="../../assets/steam20.png" /></div>
+            <div class="card_image"><img src="../../assets/breve.jpg" /></div>
             <div class="card_title"></div>
             <div class="podio text-center">
-              <h4>2° Colocado - R$ <span>20,00</span> Steam</h4>
+              <h4>A definir</h4>
+              <!-- <h4>2° Colocado - R$ <span>20,00</span> Steam</h4> -->
             </div>
           </div>
         </b-col>
@@ -80,13 +87,6 @@
       <b-row align-h="center" class="mx-0 w-100 text-light text-center">
         <b-col>
           <p>*Para mais detalhes confira nossas redes sociais*</p>
-        </b-col>
-      </b-row>
-      <b-row align-h="center" class="w-100 mx-0 my-4 text-center">
-        <b-col>
-          <b-button id="campeonato-inscr" size="lg" variant="success" href="#"
-            >Inscrever minha equipe!</b-button
-          >
         </b-col>
       </b-row>
     </b-container>
@@ -102,7 +102,20 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Campeonato",
+  methods: {
+    vava() {
+      window.open("https://forms.gle/Ch91DJoEu2RKHTMW6");
+    },
+    lolzinho() {
+      window.open("https://forms.gle/zDg6oA4UmhBp3tHY8");
+    },
+    csgo() {
+      window.open("https://forms.gle/qBbmThNh82zFRC2K8");
+    }
+  }
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

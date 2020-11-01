@@ -70,7 +70,7 @@ export default {
   data() {
     return {
       secomp: new Date(1605495600000),
-      hours: "2",
+      hours: "2"
     };
   },
   computed: {
@@ -88,8 +88,8 @@ export default {
     },
     expired() {
       return this.secomp < Date.now();
-    },
-  },
+    }
+  }
 };
 </script>
 

@@ -39,23 +39,23 @@
           <p>
             Qualquer inscrito da SECOMP está automaticamente participando do
             sorteio, então fique atento ao Instagram do evento (@secompuem) onde
-            os nome serão sorteados.
+            os nomes serão sorteados.
           </p>
         </b-col>
         <b-col>
           <h2>Quando e onde será o sorteio?</h2>
           <p>
             Os sorteios serão realizados diaramente no Instagram do evento
-            (@secompuem) e os participantes serão avisados após as palestras
+            (@secompuem) e os participantes serão avisados durante as palestras
             sobre os horários de sorteio do dia.
           </p>
         </b-col>
         <b-col>
           <h2>Como será entregue?</h2>
           <p>
-            Entraremos em contato com o vencedor para a retirada do prêmio na
-            UEM, quem não puder ir até a Universidade terá que arcar com o frete
-            de entrega.
+            A entrega do prêmio será feita na sala do PET-Informática, na
+            Universidade Estadual de Maringá ou, às custas do sorteado, no
+            endereço por ele informado.
           </p>
         </b-col>
       </b-row>
@@ -73,7 +73,7 @@
 
 <script>
 export default {
-  name: "Sorteio"
+  name: "Sorteio",
 };
 </script>
 

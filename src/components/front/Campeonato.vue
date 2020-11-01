@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-container>
-      <b-row class=" w-100 mx-0">
+      <b-row class="w-100 mx-0">
         <b-col>
           <h1 class="text-light tittle">Campeonato</h1>
         </b-col>
@@ -44,10 +44,10 @@
             O Campeonato de Jogos da Quarta Edição da SECOMP será composto por
             trẽs jogos: Valorant, League of Legends e CS:GO ao longo dos dias 21
             e 22 de novembro. A equipe participante não precisa ter nenhum
-            membro inscrito na SECOMP e, assim que inscrita, terá acesso ao
-            grupo no Discord para ficar sempre por dentro das atualizações sobre
-            as competições. Mais detalhes e o Regulamento do Campeonato no campo
-            de inscrição (é só apertar o botão para inscrever a sua equipe!).
+            membro inscrito na SECOMP. No campo de inscrição para o Campeonato
+            vocẽ encontraŕa o Regulamento e um link para o grupo no Discord,
+            onde vocẽ e sua equipe ficarão atualizados e por dentro de tudo com
+            mais detalhes.
           </p>
         </b-col>
       </b-row>

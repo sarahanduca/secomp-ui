@@ -1,88 +1,90 @@
 <template>
-  <b-container class="h-100">
-    <b-row align-v="center" align-h="center">
-      <b-col>
-        <h3 v-if="!show">Inscrição realizada com sucesso!</h3>
-        <b-form @submit.stop.prevent="onSubmit" v-if="show">
-          <b-form-group
-            id="input-group-nome"
-            label="Nome"
-            label-for="input-nome"
-          >
-            <b-form-input
-              id="input-nome"
-              v-model="$v.form.nome.$model"
-              :state="validateState('nome')"
-              required
-              placeholder="João da Silva"
-            ></b-form-input>
-          </b-form-group>
+  <b-overlay :show="fetching">
+    <b-container class="h-100">
+      <b-row align-v="center" align-h="center">
+        <b-col>
+          <h3 v-if="!show">Inscrição realizada com sucesso!</h3>
+          <b-form @submit.stop.prevent="onSubmit" v-if="show">
+            <b-form-group
+              id="input-group-nome"
+              label="Nome"
+              label-for="input-nome"
+            >
+              <b-form-input
+                id="input-nome"
+                v-model="$v.form.nome.$model"
+                :state="validateState('nome')"
+                required
+                placeholder="João da Silva"
+              ></b-form-input>
+            </b-form-group>
 
-          <b-form-group
-            id="input-group-email"
-            label="Email"
-            label-for="input-email"
-            description="Seu email jamais será compartilhado com ninguém"
-          >
-            <b-form-input
-              id="input-email"
-              v-model="$v.form.email.$model"
-              :state="validateState('email')"
-              type="email"
-              required
-              placeholder="example@example.com"
-            ></b-form-input>
-            <b-form-invalid-feedback v-if="!this.$v.form.email.callback">
-              Email em uso
-            </b-form-invalid-feedback>
-          </b-form-group>
+            <b-form-group
+              id="input-group-email"
+              label="Email"
+              label-for="input-email"
+              description="Seu email jamais será compartilhado com ninguém"
+            >
+              <b-form-input
+                id="input-email"
+                v-model="$v.form.email.$model"
+                :state="validateState('email')"
+                type="email"
+                required
+                placeholder="example@example.com"
+              ></b-form-input>
+              <b-form-invalid-feedback v-if="!this.$v.form.email.callback">
+                Email em uso
+              </b-form-invalid-feedback>
+            </b-form-group>
 
-          <b-form-group
-            id="input-group-cpf"
-            label="CPF"
-            label-for="input-CPF"
-            description="Precisamos do seu CPF para gerar o certificado"
-          >
-            <b-form-input
-              id="input-email"
-              v-model="$v.form.cpf.$model"
-              :state="validateState('cpf')"
-              required
-              v-mask="'###.###.###-##'"
-              placeholder="000.000.000-00"
-            ></b-form-input>
-            <b-form-invalid-feedback v-if="!this.$v.form.cpf.callback">
-              CPF inválido ou em uso
-            </b-form-invalid-feedback>
-          </b-form-group>
+            <b-form-group
+              id="input-group-cpf"
+              label="CPF"
+              label-for="input-CPF"
+              description="Precisamos do seu CPF para gerar o certificado"
+            >
+              <b-form-input
+                id="input-email"
+                v-model="$v.form.cpf.$model"
+                :state="validateState('cpf')"
+                required
+                v-mask="'###.###.###-##'"
+                placeholder="000.000.000-00"
+              ></b-form-input>
+              <b-form-invalid-feedback v-if="!this.$v.form.cpf.callback">
+                CPF inválido ou em uso
+              </b-form-invalid-feedback>
+            </b-form-group>
 
-          <b-form-group
-            id="input-group-ra"
-            label="RA"
-            label-for="input-ra"
-            description="Apenas para acadêmicos da UEM"
-          >
-            <b-form-input
-              id="input-ra"
-              v-model="$v.form.ra.$model"
-              :state="validateState('ra')"
-              placeholder="000000"
-              v-mask="'######'"
-            ></b-form-input>
-            <b-form-invalid-feedback>
-              RA deve ter 6 dígitos
-            </b-form-invalid-feedback>
-          </b-form-group>
+            <b-form-group
+              id="input-group-ra"
+              label="RA"
+              label-for="input-ra"
+              description="Apenas para acadêmicos da UEM"
+            >
+              <b-form-input
+                id="input-ra"
+                v-model="$v.form.ra.$model"
+                :state="validateState('ra')"
+                placeholder="000000"
+                v-mask="'######'"
+              ></b-form-input>
+              <b-form-invalid-feedback>
+                RA deve ter 6 dígitos
+              </b-form-invalid-feedback>
+            </b-form-group>
 
-          <b-form-group class="text-center">
-            <b-button type="submit" variant="success">
-              Inscrever-se
-            </b-button>
-          </b-form-group>
-        </b-form>
-      </b-col>
-    </b-row>
-  </b-container>
+            <b-form-group class="text-center">
+              <b-button type="submit" variant="success">
+                Inscrever-se
+              </b-button>
+            </b-form-group>
+          </b-form>
+        </b-col>
+      </b-row>
+    </b-container>
+  </b-overlay>
 </template>
 
 <script>
@@ -110,7 +112,8 @@ export default {
       },
       submited: false,
       response: null,
-      show: true
+      show: true,
+      fetching: false
     };
   },
   watch: {
@@ -141,7 +144,7 @@ export default {
       if (this.$v.form.$anyError) {
         return;
       }
-
+      this.fetching = true;
       this.response = await fetch(
         process.env.VUE_APP_API_URL + "/api/inscreve",
         {
@@ -154,7 +157,8 @@ export default {
         }
       )
         .then(r => r.json())
-        .catch(() => this.$router.push("/erro"));
+        .catch(() => this.$router.push("erro1"));
+      this.fetching = false;
       this.submited = true;
 
       if (this.response && this.response.status == "200") {

@@ -61,7 +61,7 @@
               id="input-group-ra"
               label="RA"
               label-for="input-ra"
-              description="Apenas para acadêmicos da UEM"
+              description="Apenas para acadêmicos da UEM (Opcional)"
             >
               <b-form-input
                 id="input-ra"

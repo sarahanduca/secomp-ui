@@ -22,7 +22,7 @@
             continuar?
           </p>
           <b-overlay :show="fechting" variant="tranparent">
-            <b-button variant="danger" @click="remover"
+            <b-button :disabled="removed" variant="danger" @click="remover"
               >Sim, quero me desinscrever</b-button
             >
           </b-overlay>

@@ -157,7 +157,7 @@ export default {
         }
       )
         .then(r => r.json())
-        .catch(() => this.$router.push("erro1"));
+        .catch(() => this.$router.push("erro"));
       this.fetching = false;
       this.submited = true;
 

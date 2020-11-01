@@ -42,13 +42,12 @@
           <h4>COMO E QUEM PODE PARTICIPAR?</h4>
           <p>
             O Campeonato de Jogos da Quarta Edição da SECOMP será composto por
-            trẽs jogos: Valorant, League of Legends e CS:GO ao longo dos dias
-            16, 17, 18, 19, 20, 21 e 22 de novembro. A equipe participante não
-            precisa ter nenhum membro inscrito na SECOMP e, assim que inscrita,
-            terá acesso ao grupo no Discord para ficar sempre por dentro das
-            atualizações sobre as competições. Mais detalhes e o Regulamento do
-            Campeonato no campo de inscrição (é só apertar o botão para
-            inscrever a sua equipe!).
+            trẽs jogos: Valorant, League of Legends e CS:GO ao longo dos dias 21
+            e 22 de novembro. A equipe participante não precisa ter nenhum
+            membro inscrito na SECOMP e, assim que inscrita, terá acesso ao
+            grupo no Discord para ficar sempre por dentro das atualizações sobre
+            as competições. Mais detalhes e o Regulamento do Campeonato no campo
+            de inscrição (é só apertar o botão para inscrever a sua equipe!).
           </p>
         </b-col>
       </b-row>

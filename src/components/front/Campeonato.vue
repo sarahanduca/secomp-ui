@@ -51,7 +51,7 @@
             e 22 de novembro. A equipe participante não precisa ter nenhum
             membro inscrito na SECOMP. No campo de inscrição para o Campeonato
             vocẽ encontraŕa o Regulamento e um link para o grupo no Discord,
-            onde vocẽ e sua equipe ficarão atualizados e por dentro de tudo com
+            onde você e sua equipe ficarão atualizados e por dentro de tudo com
             mais detalhes.
           </p>
         </b-col>

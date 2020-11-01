@@ -31,7 +31,9 @@
           </b-form-group>
 
           <b-form-group class="text-center">
-            <b-button type="submit" variant="success">Login</b-button>
+            <b-overlay variant="transparent" :show="fetching">
+              <b-button type="submit" variant="success">Login</b-button>
+            </b-overlay>
           </b-form-group>
         </b-form>
       </b-col>
@@ -48,12 +50,14 @@ export default {
       form: {
         password: ""
       },
-      invalid: false
+      invalid: false,
+      fetching: false
     };
   },
   methods: {
     async onSubmit(evt) {
       evt.preventDefault();
+      this.fetching = true;
       const response = await fetch(process.env.VUE_APP_API_URL + "/api/auth", {
         method: "POST",
         headers: {
@@ -63,7 +67,7 @@ export default {
       })
         .then(r => r.json(), false)
         .catch(() => this.$router.push("/erro"));
-
+      this.fetching = false;
       if (response) {
         localStorage.setItem("token", response.auth_token);
         localStorage.setItem(

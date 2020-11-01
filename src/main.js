@@ -15,6 +15,7 @@ import Inscritos from "./components/organizacao/Inscritos.vue";
 import Detalhes from "./components/organizacao/Detalhes.vue";
 import Disparos from "./components/organizacao/Disparos.vue";
 import Compositor from "./components/organizacao/Compositor.vue";
+import Desinscreve from "./components/front/Desinscreve.vue";
 
 import AuthService from "./services/auth.js";
 
@@ -34,7 +35,17 @@ const router = new VueRouter({
     {
       path: "/",
       component: Secomp,
-      children: [{ path: "inscricao", component: Form }]
+      children: [
+        {
+          path: "inscricao",
+          component: Form
+        }
+      ]
+    },
+    {
+      path: "/desinscreve",
+      component: Desinscreve,
+      props: route => ({ id: route.query.id, token: route.query.token })
     },
     { path: "/erro", component: Erro },
     {

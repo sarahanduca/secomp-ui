@@ -79,76 +79,76 @@ export default {
       d16: [
         {
           hora: "18h30 - 19h30",
-          palestra: "Abertura - Linnyer",
+          palestra: "Abertura - Linnyer"
         },
         {
-          hora: "21h30 - 22h00",
-          palestra: "Rafael Bastos (Dumativa)",
-        },
+          hora: "21h30 - 22h30",
+          palestra: "Rafael Bastos (Dumativa)"
+        }
       ],
       d17: [
         {
-          hora: "18h30 - 19h10",
-          palestra: "Prof. Dr. Anderson Rocha (IC-Unicamp/ IA)",
+          hora: "18h30 - 19h30",
+          palestra: "Prof. Dr. Anderson Rocha (IC-Unicamp/ IA)"
         },
         {
-          hora: "19h10 - 19h50",
-          palestra: "Izabella Mundim Brito (Itaú Unibanco)",
+          hora: "19h30 - 20h30",
+          palestra: "Izabella Mundim Brito (Itaú Unibanco)"
         },
         {
-          hora: "19h50 - 20h20",
-          palestra: "Nathalia Borges (Dumativa)",
-        },
+          hora: "20:30 - 21h30",
+          palestra: "Nathalia Borges (Dumativa)"
+        }
       ],
       d18: [
         {
           hora: "18h30 - 19h30",
           palestra:
-            "Mesa Redonda - Estêvão Gondim (Mandic), Vinicius Camargo (Amazon), Camila Stefani Innecco (DB1)",
-        },
+            "Mesa Redonda - Estêvão Gondim (Mandic), Vinicius Camargo (Amazon), Camila Stefani Innecco (DB1)"
+        }
       ],
       d19: [
         {
-          hora: "18h30 - 19h10",
+          hora: "18h30 - 19h30",
           palestra:
-            "Marcela Monteiro Montenegro Gallo (Mandic): IA - Hands-on na AWS",
+            "Marcela Monteiro Montenegro Gallo (Mandic): IA - Hands-on na AWS"
         },
         {
-          hora: "19h10 - 19h50",
+          hora: "19h30 - 20h30",
           palestra:
-            "Ricardo Satin (Matera): Modelos de recomendação para apoiar o processo de aprendizado ",
-        },
+            "Ricardo Satin (Matera): Modelos de recomendação para apoiar o processo de aprendizado "
+        }
       ],
       d20: [
         {
-          hora: "18h30 - 19h10",
+          hora: "18h30 - 19h30",
           palestra:
-            "Giovanni Ferraz de Oliveira (Mandic): Cibersegurança no trabalho remoto",
+            "Giovanni Ferraz de Oliveira (Mandic): Cibersegurança no trabalho remoto"
         },
         {
-          hora: "19h10 - 19h50",
+          hora: "19h30 - 20h30",
           palestra:
-            "Ricardo Satin (Matera): LGPD e os cuidados do desenvolvedor",
-        },
+            "Ricardo Satin (Matera): LGPD e os cuidados do desenvolvedor"
+        }
       ],
       d21: [
         {
           hora: "13h30 - 18h30",
-          campeonato: "Campeonato de Valorant ",
+          campeonato: "Campeonato de Valorant "
         },
         {
           hora: "18h30 - 22h00",
-          campeonato: "Campeonato de Counter Strike: GO",
-        },
+          campeonato: "Campeonato de Counter Strike: GO"
+        }
       ],
       d22: [
         {
           hora: "13h30 - 18h30",
-          campeonato: "Campeonato de League of Legends ",
-        },
-      ],
+          campeonato: "Campeonato de League of Legends "
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 

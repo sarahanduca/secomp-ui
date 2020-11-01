@@ -1,29 +1,31 @@
 <template>
   <b-row class="h-100 w-100 mx-0" align-v="center">
     <b-col>
-      <b-container class="text-center text-light">
-        <b-img src="../../assets/avatar.svg" width="100" class="mb-5" />
-        <b-row align-v="center">
-          <b-col>
-            <h4>{{ this.inscrito.nome }}</h4>
-            <br />
-            <span>{{ this.inscrito.email }}</span>
-          </b-col>
-        </b-row>
-        <b-col></b-col>
-        <b-row> </b-row>
-        <b-row>
-          <b-col>{{ this.inscrito.cpf }}</b-col>
-        </b-row>
-        <b-row>
-          <b-col>{{ this.inscrito.ra }}</b-col>
-        </b-row>
-        <b-row class="mt-4">
-          <b-col>
-            <b-btn variant="danger" @click="remove">Remover</b-btn>
-          </b-col>
-        </b-row>
-      </b-container>
+      <b-overlay variant="dark" :show="fetching" spinner-variant="light">
+        <b-container class="text-center text-light">
+          <b-img src="../../assets/avatar.svg" width="100" class="mb-5" />
+          <b-row align-v="center">
+            <b-col>
+              <h4>{{ this.inscrito.nome }}</h4>
+              <br />
+              <span>{{ this.inscrito.email }}</span>
+            </b-col>
+          </b-row>
+          <b-col></b-col>
+          <b-row> </b-row>
+          <b-row>
+            <b-col>{{ this.inscrito.cpf }}</b-col>
+          </b-row>
+          <b-row>
+            <b-col>{{ this.inscrito.ra }}</b-col>
+          </b-row>
+          <b-row class="mt-4">
+            <b-col>
+              <b-btn variant="danger" @click="remove">Remover</b-btn>
+            </b-col>
+          </b-row>
+        </b-container>
+      </b-overlay>
     </b-col>
   </b-row>
 </template>
@@ -35,7 +37,8 @@ export default {
   props: ["id"],
   data: function() {
     return {
-      inscrito: ""
+      inscrito: "",
+      fetching: true
     };
   },
   mounted: async function() {
@@ -57,6 +60,7 @@ export default {
         .catch(() => {
           this.$router.push("/erro");
         });
+      this.fetching = false;
       this.inscrito = data;
     } else {
       AuthService.logout();
@@ -67,7 +71,7 @@ export default {
     remove: async function() {
       const key = AuthService.getKey();
       if (key) {
-        // eslint-disable-next-line no-unused-vars
+        this.fetching = true;
         const data = await fetch(
           process.env.VUE_APP_API_URL + "/api/remove/" + this.id,
           {
@@ -82,7 +86,7 @@ export default {
           .catch(() => {
             this.$router.push("/erro");
           });
-
+        this.fetching = false;
         if (data) {
           this.$router.push("/petmaster");
         } else {

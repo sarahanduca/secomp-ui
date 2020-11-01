@@ -14,7 +14,7 @@
         ></b-form-input>
       </b-form-group>
     </b-col>
-    <b-col class="px-0 d-md-block " v-if="!isBusy">
+    <b-col class="px-0 d-md-block ">
       <b-form-group class="my-2 mx-2 d-md-none">
         <b-form-input
           id="input-search-mobile"
@@ -23,34 +23,36 @@
           placeholder="Pesquisar"
         ></b-form-input>
       </b-form-group>
-      <b-table
-        id="t-inscritos"
-        caseFirst="upper"
-        class="text-left"
-        style="background-color: #151515"
-        hover
-        :sort-by.sync="sortBy"
-        :sort-desc.sync="sortDesc"
-        :fields="fields"
-        :filter="filter"
-        primary-key="id"
-        responsive="sm"
-        :items="inscritos"
-        selectable
-        select-mode="single"
-        @row-selected="rowSelected"
-        table-variant="dark"
-      >
-        <template #head(id)="data">
-          <span>{{ data.label.toUpperCase() }}</span>
-        </template>
-        <template #head(cpf)="data">
-          <span>{{ data.label.toUpperCase() }}</span>
-        </template>
-        <template #head(ra)="data">
-          <span>{{ data.label.toUpperCase() }}</span>
-        </template>
-      </b-table>
+      <b-overlay variant="dark" :show="isBusy" spinner-variant="light">
+        <b-table
+          id="t-inscritos"
+          caseFirst="upper"
+          class="text-left"
+          style="background-color: #151515"
+          hover
+          :sort-by.sync="sortBy"
+          :sort-desc.sync="sortDesc"
+          :fields="fields"
+          :filter="filter"
+          primary-key="id"
+          responsive="sm"
+          :items="inscritos"
+          selectable
+          select-mode="single"
+          @row-selected="rowSelected"
+          table-variant="dark"
+        >
+          <template #head(id)="data">
+            <span>{{ data.label.toUpperCase() }}</span>
+          </template>
+          <template #head(cpf)="data">
+            <span>{{ data.label.toUpperCase() }}</span>
+          </template>
+          <template #head(ra)="data">
+            <span>{{ data.label.toUpperCase() }}</span>
+          </template>
+        </b-table>
+      </b-overlay>
     </b-col>
   </b-row>
 </template>

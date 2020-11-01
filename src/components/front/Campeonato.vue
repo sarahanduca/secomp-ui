@@ -41,21 +41,14 @@
           <h2 class="mt-5">CAMPEONATO DE JOGOS</h2>
           <h4>COMO E QUEM PODE PARTICIPAR?</h4>
           <p>
-            A Semana da Computação é um evento Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. A Semana da Computação é um evento Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
+            O Campeonato de Jogos da Quarta Edição da SECOMP será composto por
+            trẽs jogos: Valorant, League of Legends e CS:GO ao longo dos dias
+            16, 17, 18, 19, 20, 21 e 22 de novembro. A equipe participante não
+            precisa ter nenhum membro inscrito na SECOMP e, assim que inscrita,
+            terá acesso ao grupo no Discord para ficar sempre por dentro das
+            atualizações sobre as competições. Mais detalhes e o Regulamento do
+            Campeonato no campo de inscrição (é só apertar o botão para
+            inscrever a sua equipe!).
           </p>
         </b-col>
       </b-row>
@@ -123,9 +116,11 @@ export default {};
   background-color: #a358ce;
   border-color: #a358ce;
 }
-#campeonato-inscr:focus {
+#campeonato-inscr:focus,
+#campeonato-inscr:hover {
   box-shadow: 0 0 0 0.2rem #a358ce;
 }
+
 #top-section-border {
   width: 100%;
   height: 5em;

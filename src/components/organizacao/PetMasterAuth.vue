@@ -60,7 +60,9 @@ export default {
           "Content-Type": "application/json"
         },
         body: JSON.stringify(this.form)
-      }).then(r => r.json(), false);
+      })
+        .then(r => r.json(), false)
+        .catch(() => this.$router.push("/erro"));
 
       if (response) {
         localStorage.setItem("token", response.auth_token);

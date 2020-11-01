@@ -10,8 +10,8 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="text-center">
           <b-nav-item to="/petmaster">Inscritos</b-nav-item>
-          <b-nav-item to="/petmaster/disparos">Disparos</b-nav-item>
-          <b-nav-item to="/petmaster/compositor">Compositor</b-nav-item>
+          <!-- <b-nav-item to="/petmaster/disparos">Disparos</b-nav-item> -->
+          <!-- <b-nav-item to="/petmaster/compositor">Compositor</b-nav-item> -->
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto">
           <b-btn variant="dark" @click="logout">Sair</b-btn>

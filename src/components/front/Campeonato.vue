@@ -50,7 +50,7 @@
             trẽs jogos: Valorant, League of Legends e CS:GO ao longo dos dias 21
             e 22 de novembro. A equipe participante não precisa ter nenhum
             membro inscrito na SECOMP. No campo de inscrição para o Campeonato
-            vocẽ encontraŕa o Regulamento e um link para o grupo no Discord,
+            vocẽ encontrará o Regulamento e um link para o grupo no Discord,
             onde você e sua equipe ficarão atualizados e por dentro de tudo com
             mais detalhes.
           </p>

@@ -13,12 +13,12 @@ class AuthService {
               Authorization: `Bearer ${key}`
             }
           }
-        );
+        ).catch(() => this.$router.push("/erro"));
 
         return response.ok;
       } else {
         localStorage.removeItem("token");
-        localStorage.removeItem("exp");
+        localStorage.removeItem("expire");
         return false;
       }
     } else {
@@ -38,7 +38,7 @@ class AuthService {
   }
   logout() {
     localStorage.removeItem("token");
-    localStorage.removeItem("exp");
+    localStorage.removeItem("expire");
   }
 }
 

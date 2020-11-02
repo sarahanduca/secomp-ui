@@ -78,79 +78,82 @@ export default {
       fields: ["hora", "palestra"],
       d16: [
         {
-          hora: "18h30 - 20h00",
-          palestra: "Abertura - Linnyer"
+          hora: "18h - 20h",
+          palestra:
+            "Linnyer: Manna_team: a maior rede de ensino, pesquisa, extensão e inovação em IoT"
         },
         {
-          hora: "20h30 - 21h30",
+          hora: "20h - 21h",
           palestra:
             "Alan (eureka) Case EurekaLabs: Aplicação de IA para reconhecimento de câncer de mama."
         },
         {
-          hora: "21h30 - 22h30",
-          palestra: "Rafael Bastos (Dumativa)"
+          hora: "21h - 22h",
+          palestra:
+            "Rafael Bastos (Dumativa): A Carreira de Jogos no Brasil - O que é necessário saber pra trabalhar ou ter sua equipe de jogos"
         }
       ],
       d17: [
         {
-          hora: "18h30 - 19h30",
+          hora: "18h - 19h",
           palestra: "Prof. Dr. Anderson Rocha (IC-Unicamp/ IA)"
         },
         {
-          hora: "19h30 - 20h30",
+          hora: "19h - 20h",
           palestra: "Izabella Mundim Brito (Itaú Unibanco)"
         },
         {
-          hora: "20h30 - 21h30",
-          palestra: "Nathalia Borges (Dumativa)"
+          hora: "20h - 21h",
+          palestra:
+            "Nathalia Borges (Dumativa):  As diferenças na programação de Negócios X Jogos"
         },
         {
-          hora: "21h30 - 22h30",
+          hora: "21h - 22h",
           palestra: "Guilherme Puglia (Google)"
         }
       ],
       d18: [
         {
-          hora: "18h30 - 19h30",
+          hora: "18h - 20h",
           palestra:
             "Mesa Redonda - Estêvão Gondim (Mandic), Vinicius Camargo (Amazon), Camila Stefani Innecco (DB1)"
         },
         {
-          hora: "19h30 - 20h30",
+          hora: "20h - 21h",
           palestra:
             "Pedro Rocha (aiqfome): aiqfome: de 30k a 2m de pedidos/mês, o que mudou?"
         }
       ],
       d19: [
         {
-          hora: "18h30 - 19h30",
+          hora: "18h - 19h",
           palestra:
             "Marcela Monteiro Montenegro Gallo (Mandic): IA - Hands-on na AWS"
         },
         {
-          hora: "19h30 - 20h30",
+          hora: "19h - 20h",
           palestra:
             "Ricardo Satin (Matera): Modelos de recomendação para apoiar o processo de aprendizado "
         },
         {
-          hora: "20h30 - 21h30",
+          hora: "20h - 21h",
           palestra:
             "Thiago Moraes (aiqfome): da universidade para o mercado de trabalho"
         }
       ],
       d20: [
         {
-          hora: "18h30 - 19h30",
+          hora: "18h - 19h",
           palestra:
             "Giovanni Ferraz de Oliveira (Mandic): Cibersegurança no trabalho remoto"
         },
         {
-          hora: "19h30 - 20h30",
+          hora: "19h - 20h",
           palestra:
             "Ricardo Satin (Matera): LGPD e os cuidados do desenvolvedor"
         },
         {
-          hora: "20h30 - 21h30",
+          hora: "20h - 21h",
           palestra:
             "Felipe Cousin (aiqfome): aiqentrega: os desafios do lançamento de um novo produto no mercado"
         }

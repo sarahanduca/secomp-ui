@@ -104,7 +104,15 @@ const router = new VueRouter({
   ]
 });
 
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount("#app");
+router.beforeEach((to, from, next) => {
+  if ("https:" == document.location.protocol) {
+    next();
+  } else {
+    next(false);
+    window.open(process.env.VUE_APP_API_URL + to.fullPath, "_self");
+  }
+}),
+  new Vue({
+    router,
+    render: h => h(App)
+  }).$mount("#app");

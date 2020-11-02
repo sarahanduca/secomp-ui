@@ -113,8 +113,8 @@ export default {
     },
     csgo() {
       window.open("https://forms.gle/qBbmThNh82zFRC2K8");
-    }
-  }
+    },
+  },
 };
 </script>
 

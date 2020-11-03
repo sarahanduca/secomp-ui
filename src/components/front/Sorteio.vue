@@ -9,7 +9,7 @@
       <b-row class="cards-list w-100 mx-0">
         <b-col>
           <div class="card 1">
-            <div class="card_image"><img src="../../assets/redbull.jpg" /></div>
+            <div class="card_image"><img src="../../assets/lenda.jpg" /></div>
           </div>
         </b-col>
         <b-col>
@@ -73,7 +73,7 @@
 
 <script>
 export default {
-  name: "Sorteio",
+  name: "Sorteio"
 };
 </script>
 

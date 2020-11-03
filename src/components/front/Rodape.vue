@@ -43,10 +43,16 @@
                   alt=""
               /></a>
               <a href="https://www.dumativa.com.br">
-                <b-img width="100" src="../../assets/dumativa.png" alt=""
+                <b-img width="85" src="../../assets/dumativa.png" alt=""
               /></a>
               <a href="https://www.db1.com.br">
                 <b-img width="130" src="../../assets/db1.png" alt=""
+              /></a>
+              <a href="https://accion.com.br/">
+                <b-img width="120" src="../../assets/accion.webp" alt=""
+              /></a>
+              <a href="https://aiqfome.com/">
+                <b-img width="95" src="../../assets/aiqfome.png" alt=""
               /></a>
             </b-row>
           </b-container>

@@ -205,6 +205,9 @@ export default {
 
         if (this.response && this.response.status == "200") {
           this.show = false;
+          this.showTerm = false;
+        } else {
+          this.showTerm = false;
         }
       } else {
         this.showTerm = true;

@@ -16,7 +16,6 @@ import Detalhes from "./components/organizacao/Detalhes.vue";
 import Disparos from "./components/organizacao/Disparos.vue";
 import Compositor from "./components/organizacao/Compositor.vue";
 import Desinscreve from "./components/front/Desinscreve.vue";
-import Privacidade from "./components/front/Privacidade.vue";
 
 import AuthService from "./services/auth.js";
 
@@ -40,10 +39,6 @@ const router = new VueRouter({
         {
           path: "inscricao",
           component: Form
-        },
-        {
-          path: "privacidade",
-          component: Privacidade
         }
       ]
     },

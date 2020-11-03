@@ -1,6 +1,6 @@
 <template>
   <b-overlay :show="fetching">
-    <b-container class="h-100">
+    <b-container class="h-100" v-if="!showTerm">
       <b-row align-v="center" align-h="center">
         <b-col>
           <h3 v-if="!show">Inscrição realizada com sucesso!</h3>
@@ -75,17 +75,52 @@
               </b-form-invalid-feedback>
             </b-form-group>
 
-            <p class="text-center">
-              Ao se inscrever você concorda com o nosso
-              <b-link to="privacidade">termo de consentimento de dados</b-link>
-            </p>
-
             <b-form-group class="text-center">
               <b-button type="submit" variant="success">
-                Inscrever-se
+                Continuar
               </b-button>
             </b-form-group>
           </b-form>
+        </b-col>
+      </b-row>
+    </b-container>
+    <b-container class="h-100" v-if="showTerm">
+      <b-row align-v="center" align-h="center">
+        <b-col>
+          <h4 class="text-center">Termo de consentimento de uso de dados</h4>
+          <p>
+            A Lei Geral de proteção de Dados (LGPD) - Lei nº 13709, de 14 de
+            agosto de 2018, atualizada pela Lei nº 13853, de 2019, dispõe sobre
+            o tratamento de dados pessoais com o objetivo de proteger os
+            direitos fundamentais de liberdade e de privacidade do indivíduo.
+            Nesse sentido, este termo de consentimento versa sobre o uso dos
+            dados coletados para a inscrição da quarta edição da Semana da
+            Computação (SECOMP), no ano de 2020, e sobre a gravação das
+            palestras que ocorrerão.<br />Os seguintes dados serão coletados e
+            tratados: Nome, CPF, endereço eletrônico, RA/Matrícula. Esses dados
+            serão coletados única e exclusivamente para confecção do relatório
+            final do evento e dos certificados de participação. Caso os dados
+            sejam utilizados para geração de estatísticas de participação no
+            evento, eles serão anonimizados.<br />Os dados pessoais coletados
+            estarão sob a responsabilidade do Departamento de Informática da
+            Universidade Estadual de Maringá e não serão compartilhados com
+            quaisquer outras instituições, públicas ou privadas. Durante a
+            realização do evento, as palestras serão gravadas e serão
+            disponibilizadas nas redes sociais oficiais do evento. As
+            tecnologias necessárias para garantir a confidencialidade e a
+            proteção dos dados estão sendo utilizadas de forma adequada.<br />A
+            qualquer momento, você poderá solicitar remoção dos dados
+            armazenados e ter acesso às informações sobre a forma e a duração de
+            tratamento dos seus dados, e ainda revogar este consentimento.<br />Para
+            dúvidas e esclarecimentos, entre contato com o Prof. Dr. Daniel
+            Kikuti, coordenador geral do evento, pelo e-mail
+            <b-link href="mailto:dkikuti@uem.br">dkikuti@uem.br</b-link>.
+          </p>
+        </b-col>
+      </b-row>
+      <b-row align-h="center" class="text-center pb-3">
+        <b-col>
+          <b-button variant="success" @click="onSubmit">Inscrever-se</b-button>
         </b-col>
       </b-row>
     </b-container>
@@ -118,7 +153,8 @@ export default {
       submited: false,
       response: null,
       show: true,
-      fetching: false
+      fetching: false,
+      showTerm: false
     };
   },
   watch: {
@@ -149,25 +185,29 @@ export default {
       if (this.$v.form.$anyError) {
         return;
       }
-      this.fetching = true;
-      this.response = await fetch(
-        process.env.VUE_APP_API_URL + "/api/inscreve",
-        {
-          method: "POST",
-          mode: "cors",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(this.form)
-        }
-      )
-        .then(r => r.json())
-        .catch(() => this.$router.push("erro"));
-      this.fetching = false;
-      this.submited = true;
+      if (this.showTerm) {
+        this.fetching = true;
+        this.response = await fetch(
+          process.env.VUE_APP_API_URL + "/api/inscreve",
+          {
+            method: "POST",
+            mode: "cors",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(this.form)
+          }
+        )
+          .then(r => r.json())
+          .catch(() => this.$router.push("erro"));
+        this.fetching = false;
+        this.submited = true;
 
-      if (this.response && this.response.status == "200") {
-        this.show = false;
+        if (this.response && this.response.status == "200") {
+          this.show = false;
+        }
+      } else {
+        this.showTerm = true;
       }
     },
     validateState(name) {

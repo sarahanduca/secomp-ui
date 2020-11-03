@@ -2,7 +2,7 @@
   <div class="w-100">
     <NavBar />
 
-    <b-modal id="modal-inscricao" title="Inscrição" hide-footer>
+    <b-modal id="modal-inscricao" title="Inscrição" hide-footer scrollable>
       <router-view></router-view>
     </b-modal>
 

@@ -75,6 +75,11 @@
               </b-form-invalid-feedback>
             </b-form-group>
 
+            <p class="text-center">
+              Ao se inscrever você concorda com o nosso
+              <b-link to="privacidade">termo de consentimento de dados</b-link>
+            </p>
+
             <b-form-group class="text-center">
               <b-button type="submit" variant="success">
                 Inscrever-se

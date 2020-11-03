@@ -78,7 +78,11 @@ export default {
       fields: ["hora", "palestra"],
       d16: [
         {
-          hora: "18h - 20h",
+          hora: "18h - 18h30",
+          palestra: "Cerimônia de abertura"
+        },
+        {
+          hora: "18h30 - 20h",
           palestra:
             "Linnyer: Manna_team: a maior rede de ensino, pesquisa, extensão e inovação em IoT"
         },
@@ -122,6 +126,11 @@ export default {
           hora: "20h - 21h",
           palestra:
             "Pedro Rocha (aiqfome): aiqfome: de 30k a 2m de pedidos/mês, o que mudou?"
+        },
+        {
+          hora: "21h - 22h",
+          palestra:
+            "Gustavo Zanoni: Reconhecimento de Padrões: do Início ao Fim"
         }
       ],
       d19: [
@@ -139,6 +148,11 @@ export default {
           hora: "20h - 21h",
           palestra:
             "Thiago Moraes (aiqfome): da universidade para o mercado de trabalho"
+        },
+        {
+          hora: "21h - 22h",
+          palestra:
+            "Mariana Soder: Um Overview dos Métodos Tradicionais e Modernos de PLN"
         }
       ],
       d20: [
@@ -156,22 +170,51 @@ export default {
           hora: "20h - 21h",
           palestra:
             "Felipe Cousin (aiqfome): aiqentrega: os desafios do lançamento de um novo produto no mercado"
+        },
+        {
+          hora: "21h - 22h",
+          palestra:
+            "Charbel Abbas e João Sabino (Sancor Seguros): Como implementar segurança continua no desenvolvimento de software"
         }
       ],
       d21: [
         {
-          hora: "13h30 - 18h30",
-          campeonato: "Campeonato de Valorant "
+          hora: "15h - 16h",
+          campeonato: "Campeonato de Valorant - Final jogo 1"
         },
         {
-          hora: "18h30 - 22h00",
-          campeonato: "Campeonato de Counter Strike: GO"
+          hora: "16h - 17h",
+          campeonato: "Campeonato de Valorant - Final jogo 2"
+        },
+        {
+          hora: "17h - 18h",
+          campeonato: "Campeonato de Valorant - Final jogo 3"
+        },
+        {
+          hora: "18h - 19h",
+          campeonato: "Campeonato de Counter Strike: GO - Final jogo 1"
+        },
+        {
+          hora: "19h - 20h",
+          campeonato: "Campeonato de Counter Strike: GO - Final jogo 2"
+        },
+        {
+          hora: "20h - 21h",
+          campeonato: "Campeonato de Counter Strike: GO - Final jogo 3"
         }
       ],
       d22: [
         {
-          hora: "13h30 - 18h30",
-          campeonato: "Campeonato de League of Legends "
+          hora: "15h - 16h",
+          campeonato: "Campeonato de LOL - Final jogo 1"
+        },
+        {
+          hora: "16h - 17h",
+          campeonato: "Campeonato de LOL - Final jogo 2"
+        },
+        {
+          hora: "17h - 18h",
+          campeonato: "Campeonato de LOL - Final jogo 3"
         }
       ]
     };

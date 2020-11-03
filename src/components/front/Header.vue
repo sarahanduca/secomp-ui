@@ -11,7 +11,7 @@
             Maringá) e é promovido pelo Departamento de Informática, o DIN. A
             SECOMP 2020 será a quarta edição do evento e acontecerá nos dias 16,
             17, 18, 19 e 20 de novembro, totalmente gratuita e aberta para
-            qulaquer um, serão dias composto por palestras, painéis de
+            qualquer um, serão dias composto por palestras, painéis de
             discussões, campeonato de jogos, e sorteios, tudo isto com o intuito
             de levar a tecnologia e informação a quem quiser participar. Você
             pode conferir nosso cronograma aqui pelo site, mas caso faça

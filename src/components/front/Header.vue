@@ -10,12 +10,12 @@
             evento que ocorre uma vez por ano na UEM (Universidade Estadual de
             Maringá) e é promovido pelo Departamento de Informática, o DIN. A
             SECOMP 2020 será a quarta edição do evento e acontecerá nos dias 16,
-            17, 18, 19, 20, 21 e 22 de novembro, totalmente gratuita e aberta
-            para qualquer um. Serão dias compostos por palestras, painéis de
-            discussões, campeonato de jogos e sorteios, tudo isto com o intuito
-            de levar a tecnologia e a informação a quem quiser participar. Você
-            pode conferir nosso cronograma aqui pelo site, mas caso faça
-            inscrição, receberá um e-mail com mais detalhes sobre o evento e um
+            17, 18, 19, 20, 21 e 22 de novembro de 2020. As inscrições são
+            gratuitas e todos podem participar! A programação inclui palestras,
+            painéis de discussões, campeonato de jogos e sorteios, tudo isto com
+            o intuito de levar tecnologia e informação aos participantes.
+            Confira a programação aqui pelo site. Quando você fizer sua
+            inscrição, irá receber um e-mail com detalhes sobre o evento e um
             link para participar do nosso servidor no Discord e assim ficar por
             dentro de qualquer atualização. Aproveite!
           </p>
@@ -38,7 +38,7 @@
       </b-row>
       <b-row align-h="end" class="w-100 mx-0 pt-4">
         <b-col class="mr-5">
-          <h2 class="text-right " v-if="!expired">
+          <h2 class="text-right" v-if="!expired">
             FALTAM <span>{{ daysLeft }}</span> DIA<span
               class="light"
               v-if="daysLeft != 1"
@@ -70,7 +70,7 @@ export default {
   data() {
     return {
       secomp: new Date(1605495600000),
-      hours: "2"
+      hours: "2",
     };
   },
   computed: {
@@ -88,8 +88,8 @@ export default {
     },
     expired() {
       return this.secomp < Date.now();
-    }
-  }
+    },
+  },
 };
 </script>
 

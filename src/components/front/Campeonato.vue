@@ -141,6 +141,7 @@ export default {
   width: 100%;
   height: 5em;
 }
+
 .tittle {
   font-size: 64px;
   text-transform: uppercase;
@@ -166,9 +167,9 @@ export default {
 
 .podio h4 {
   color: #f8f9fa;
-  font-size: 25px;
+  font-size: 1.2rem;
   position: relative;
-  top: 28px;
+  top: 33px;
 }
 .podio span {
   color: #a358ce;

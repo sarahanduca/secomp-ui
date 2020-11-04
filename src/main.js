@@ -118,8 +118,8 @@ router.beforeEach((to, from, next) => {
   if ("https:" == document.location.protocol) {
     next();
   } else {
-    next(false);
-    window.open(process.env.VUE_APP_API_URL + to.fullPath, "_self");
+    next();
+    //window.open(process.env.VUE_APP_API_URL + to.fullPath, "_self");
   }
 }),
   new Vue({

@@ -65,7 +65,7 @@
         <b-col class="cards-list-award">
           <div class="card 5">
             <div class="card_image">
-              <img src="../../assets/breve.jpg" />
+              <img src="../../assets/Premio1.jpg" />
             </div>
             <div class="card_title"></div>
             <div class="pt-5 podio text-center">
@@ -81,7 +81,7 @@
           <div class="card 4">
             <div class="card_image"><img src="../../assets/breve.jpg" /></div>
             <div class="card_title"></div>
-            <div class="podio text-center">
+            <div class="pt-5 podio text-center">
               <h4>A definir</h4>
               <!-- <h4>2° Colocado - R$ <span>20,00</span> Steam</h4> -->
             </div>

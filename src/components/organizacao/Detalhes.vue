@@ -57,9 +57,12 @@ export default {
         }
       )
         .then(r => r.json(), false)
-        .catch(() => {
-          this.$router.push("/erro");
-        });
+        .catch(e =>
+          this.$router.push({
+            path: "/erro",
+            query: { msg: e.toString() }
+          })
+        );
       this.fetching = false;
       this.inscrito = data;
     } else {
@@ -83,9 +86,12 @@ export default {
           }
         )
           .then(true, false)
-          .catch(() => {
-            this.$router.push("/erro");
-          });
+          .catch(e =>
+            this.$router.push({
+              path: "/erro",
+              query: { msg: e.toString() }
+            })
+          );
         this.fetching = false;
         if (data) {
           this.$router.push("/petmaster");

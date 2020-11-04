@@ -86,9 +86,12 @@ export default {
         }
       })
         .then(r => r.json(), false)
-        .catch(() => {
-          this.$router.push("/erro");
-        });
+        .catch(e =>
+          this.$router.push({
+            path: "/erro",
+            query: { msg: e.toString() }
+          })
+        );
       this.inscritos = data;
       this.isBusy = false;
     } else {

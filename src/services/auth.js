@@ -13,7 +13,7 @@ class AuthService {
               Authorization: `Bearer ${key}`
             }
           }
-        ).catch(() => this.$router.push("/erro"));
+        );
 
         return response.ok;
       } else {

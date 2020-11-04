@@ -61,7 +61,7 @@
           <h2>PRÊMIOS</h2>
         </b-col>
       </b-row>
-      <b-row align-h="center" class="mx-0 w-100">
+      <b-row align-h="center" class="pb-5 mx-0 w-100">
         <b-col class="cards-list-award">
           <div class="card 5">
             <div class="card_image">
@@ -86,11 +86,6 @@
               <!-- <h4>2° Colocado - R$ <span>20,00</span> Steam</h4> -->
             </div>
           </div>
-        </b-col>
-      </b-row>
-      <b-row align-h="center" class="pt-5 mx-0 w-100 text-light text-center">
-        <b-col>
-          <p>*Para mais detalhes confira nossas redes sociais*</p>
         </b-col>
       </b-row>
     </b-container>

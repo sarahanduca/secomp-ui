@@ -79,146 +79,147 @@ export default {
       d16: [
         {
           hora: "18h - 18h30",
-          palestra: "Cerimônia de abertura"
+          palestra: "Cerimônia de abertura",
         },
         {
           hora: "18h30 - 20h",
           palestra:
-            "Linnyer Beatrys Ruiz Aylon: Manna_team: a maior rede de ensino, pesquisa, extensão e inovação em IoT"
+            "Linnyer Beatrys Ruiz Aylon: Manna_team: a maior rede de ensino, pesquisa, extensão e inovação em IoT",
         },
         {
           hora: "20h - 21h",
           palestra:
-            "Alan Lopes de Sousa Freitas (eureka) Case EurekaLabs: Aplicação de IA para reconhecimento de câncer de mama."
+            "Alan Lopes de Sousa Freitas (eureka) Case EurekaLabs: Aplicação de IA para reconhecimento de câncer de mama.",
         },
         {
           hora: "21h - 22h",
           palestra:
-            "Rafael Bastos (Dumativa): A Carreira de Jogos no Brasil - O que é necessário saber pra trabalhar ou ter sua equipe de jogos"
-        }
+            "Rafael Bastos (Dumativa): A Carreira de Jogos no Brasil - O que é necessário saber pra trabalhar ou ter sua equipe de jogos",
+        },
       ],
       d17: [
         {
           hora: "18h - 19h",
-          palestra: "Prof. Dr. Anderson Rocha (IC-Unicamp/ IA)"
+          palestra: "Prof. Dr. Anderson Rocha (IC-Unicamp/ IA)",
         },
         {
           hora: "19h - 20h",
-          palestra: "Izabella Mundim Brito (Itaú Unibanco)"
+          palestra:
+            "Izabella Mundim Brito (Itaú Unibanco): Privacidade e Proteção de Dados na Prática: desafios da LGPD",
         },
         {
           hora: "20h - 21h",
           palestra:
-            "Nathalia Borges (Dumativa):  As diferenças na programação de Negócios X Jogos"
+            "Nathalia Borges (Dumativa):  As diferenças na programação de Negócios X Jogos",
         },
         {
           hora: "21h - 22h",
-          palestra: "Guilherme Puglia (Google)"
-        }
+          palestra: "Guilherme Puglia (Google)",
+        },
       ],
       d18: [
         {
           hora: "18h - 20h",
           palestra:
-            "Mesa Redonda - Camila Stefani Innecco (DB1), Estêvão Gondim (Mandic), Ricardo Henrique (Eureka), Vinicius Camargo (Amazon)"
+            "Mesa Redonda - Camila Stefani Innecco (DB1), Estêvão Gondim (Mandic), Ricardo Henrique (Eureka), Vinicius Camargo (Amazon)",
         },
         {
           hora: "20h - 21h",
           palestra:
-            "Pedro Rocha (aiqfome): aiqfome: de 30K a 2M de pedidos por mês, o que mudou?"
+            "Pedro Rocha (aiqfome): aiqfome: de 30K a 2M de pedidos por mês, o que mudou?",
         },
         {
           hora: "21h - 22h",
           palestra:
-            "Gustavo Zanoni: Reconhecimento de Padrões: do Início ao Fim"
-        }
+            "Gustavo Zanoni: Reconhecimento de Padrões: do Início ao Fim",
+        },
       ],
       d19: [
         {
           hora: "18h - 19h",
           palestra:
-            "Marcela Monteiro Montenegro Gallo (Mandic): IA - Hands-on na AWS"
+            "Marcela Monteiro Montenegro Gallo (Mandic): IA - Hands-on na AWS",
         },
         {
           hora: "19h - 20h",
           palestra:
-            "Ricardo Satin (Matera): Modelos de recomendação para apoiar o processo de aprendizado "
+            "Ricardo Satin (Matera): Modelos de recomendação para apoiar o processo de aprendizado ",
         },
         {
           hora: "20h - 21h",
           palestra:
-            "Thiago Moraes (aiqfome): da universidade para o mercado de trabalho"
+            "Thiago Moraes (aiqfome): da universidade para o mercado de trabalho",
         },
         {
           hora: "21h - 22h",
           palestra:
-            "Mariana Soder: Um Overview dos Métodos Tradicionais e Modernos de PLN"
-        }
+            "Mariana Soder: Um Overview dos Métodos Tradicionais e Modernos de PLN",
+        },
       ],
       d20: [
         {
           hora: "18h - 19h",
           palestra:
-            "Giovanni Ferraz de Oliveira (Mandic): Cibersegurança no trabalho remoto"
+            "Giovanni Ferraz de Oliveira (Mandic): Cibersegurança no trabalho remoto",
         },
         {
           hora: "19h - 20h",
           palestra:
-            "Ricardo Satin (Matera): LGPD e os cuidados do desenvolvedor"
+            "Ricardo Satin (Matera): LGPD e os cuidados do desenvolvedor",
         },
         {
           hora: "20h - 21h",
           palestra:
-            "Felipe Cousin (aiqfome): aiqentrega: os desafios do lançamento de um novo produto no mercado"
+            "Felipe Cousin (aiqfome): aiqentrega: os desafios do lançamento de um novo produto no mercado",
         },
         {
           hora: "21h - 22h",
           palestra:
-            "Charbel Abbas e João Sabino (Sancor Seguros): Como implementar segurança continua no desenvolvimento de software"
-        }
+            "Charbel Abbas e João Sabino (Sancor Seguros): Como implementar segurança continua no desenvolvimento de software",
+        },
       ],
       d21: [
         {
           hora: "15h - 16h",
-          campeonato: "Campeonato de Valorant - Final jogo 1"
+          campeonato: "Campeonato de Valorant - Final jogo 1",
         },
         {
           hora: "16h - 17h",
-          campeonato: "Campeonato de Valorant - Final jogo 2"
+          campeonato: "Campeonato de Valorant - Final jogo 2",
         },
         {
           hora: "17h - 18h",
-          campeonato: "Campeonato de Valorant - Final jogo 3"
+          campeonato: "Campeonato de Valorant - Final jogo 3",
         },
         {
           hora: "18h - 19h",
-          campeonato: "Campeonato de Counter Strike: GO - Final jogo 1"
+          campeonato: "Campeonato de Counter Strike: GO - Final jogo 1",
         },
         {
           hora: "19h - 20h",
-          campeonato: "Campeonato de Counter Strike: GO - Final jogo 2"
+          campeonato: "Campeonato de Counter Strike: GO - Final jogo 2",
         },
         {
           hora: "20h - 21h",
-          campeonato: "Campeonato de Counter Strike: GO - Final jogo 3"
-        }
+          campeonato: "Campeonato de Counter Strike: GO - Final jogo 3",
+        },
       ],
       d22: [
         {
           hora: "15h - 16h",
-          campeonato: "Campeonato de LOL - Final jogo 1"
+          campeonato: "Campeonato de LOL - Final jogo 1",
         },
         {
           hora: "16h - 17h",
-          campeonato: "Campeonato de LOL - Final jogo 2"
+          campeonato: "Campeonato de LOL - Final jogo 2",
         },
         {
           hora: "17h - 18h",
-          campeonato: "Campeonato de LOL - Final jogo 3"
-        }
-      ]
+          campeonato: "Campeonato de LOL - Final jogo 3",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

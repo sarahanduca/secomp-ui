@@ -38,14 +38,14 @@ const router = new VueRouter({
       children: [
         {
           path: "inscricao",
-          component: Form
-        }
-      ]
+          component: Form,
+        },
+      ],
     },
     {
       path: "/desinscreve",
       component: Desinscreve,
-      props: route => ({ id: route.query.id, token: route.query.token })
+      props: (route) => ({ id: route.query.id, token: route.query.token }),
     },
     { path: "/erro", component: Erro },
     {
@@ -53,7 +53,7 @@ const router = new VueRouter({
       component: Auth,
       beforeEnter: (to, from, next) => {
         AuthService.already_logged()
-          .then(logged => {
+          .then((logged) => {
             if (logged) {
               next("/petmaster");
             } else {
@@ -63,14 +63,14 @@ const router = new VueRouter({
           .catch(() => {
             next("/erro");
           });
-      }
+      },
     },
     {
       path: "/petmaster",
       component: PetMaster,
       beforeEnter: (to, from, next) => {
         AuthService.already_logged()
-          .then(logged => {
+          .then((logged) => {
             if (logged) {
               next();
             } else {
@@ -84,35 +84,35 @@ const router = new VueRouter({
       children: [
         {
           path: "",
-          component: Inscritos
+          component: Inscritos,
         },
         {
           path: "inscrito",
           component: Detalhes,
-          props: route => ({ id: route.query.id })
+          props: (route) => ({ id: route.query.id }),
         },
         {
           path: "disparos",
-          component: Disparos
+          component: Disparos,
         },
         {
           path: "compositor",
-          component: Compositor
-        }
-      ]
-    }
-  ]
+          component: Compositor,
+        },
+      ],
+    },
+  ],
 });
 
 router.beforeEach((to, from, next) => {
   if ("https:" == document.location.protocol) {
     next();
   } else {
-    next(false);
-    window.open(process.env.VUE_APP_API_URL + to.fullPath, "_self");
+    next();
+    // window.open(process.env.VUE_APP_API_URL + to.fullPath, "_self");
   }
 }),
   new Vue({
     router,
-    render: h => h(App)
+    render: (h) => h(App),
   }).$mount("#app");

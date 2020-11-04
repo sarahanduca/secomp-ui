@@ -64,10 +64,15 @@
       <b-row align-h="center" class="mx-0 w-100">
         <b-col class="cards-list-award">
           <div class="card 5">
-            <div class="card_image"><img src="../../assets/breve.jpg" /></div>
+            <div class="card_image">
+              <img src="../../assets/Premio1.jpg" />
+            </div>
             <div class="card_title"></div>
-            <div class="podio text-center">
-              <h4>A definir</h4>
+            <div class="pt-5 podio text-center">
+              <h4>
+                Primeiro colocado: pack de 4 <br />
+                Segundo e terceiro: pack de 2
+              </h4>
               <!-- <h4>1° Colocado - R$ <span>50,00</span> Steam</h4> -->
             </div>
           </div>
@@ -76,14 +81,14 @@
           <div class="card 4">
             <div class="card_image"><img src="../../assets/breve.jpg" /></div>
             <div class="card_title"></div>
-            <div class="podio text-center">
+            <div class="pt-5 podio text-center">
               <h4>A definir</h4>
               <!-- <h4>2° Colocado - R$ <span>20,00</span> Steam</h4> -->
             </div>
           </div>
         </b-col>
       </b-row>
-      <b-row align-h="center" class="mx-0 w-100 text-light text-center">
+      <b-row align-h="center" class="pt-5 mx-0 w-100 text-light text-center">
         <b-col>
           <p>*Para mais detalhes confira nossas redes sociais*</p>
         </b-col>
@@ -112,8 +117,8 @@ export default {
     },
     csgo() {
       window.open("https://forms.gle/qBbmThNh82zFRC2K8");
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -38,80 +38,80 @@ const router = new VueRouter({
       children: [
         {
           path: "inscricao",
-          component: Form
-        }
-      ]
+          component: Form,
+        },
+      ],
     },
     {
       path: "/desinscreve",
       component: Desinscreve,
-      props: route => ({ id: route.query.id, token: route.query.token })
+      props: (route) => ({ id: route.query.id, token: route.query.token }),
     },
     {
       path: "/erro",
       component: Erro,
-      props: route => ({ msg: route.query.msg })
+      props: (route) => ({ msg: route.query.msg }),
     },
     {
       path: "/login",
       component: Auth,
       beforeEnter: (to, from, next) => {
         AuthService.already_logged()
-          .then(logged => {
+          .then((logged) => {
             if (logged) {
               next("/petmaster");
             } else {
               next();
             }
           })
-          .catch(e =>
+          .catch((e) =>
             next({
               path: "/erro",
-              query: { msg: e.toString() }
+              query: { msg: e.toString() },
             })
           );
-      }
+      },
     },
     {
       path: "/petmaster",
       component: PetMaster,
       beforeEnter: (to, from, next) => {
         AuthService.already_logged()
-          .then(logged => {
+          .then((logged) => {
             if (logged) {
               next();
             } else {
               next("/login");
             }
           })
-          .catch(e =>
+          .catch((e) =>
             next({
               path: "/erro",
-              query: { msg: e.toString() }
+              query: { msg: e.toString() },
             })
           );
       },
       children: [
         {
           path: "",
-          component: Inscritos
+          component: Inscritos,
         },
         {
           path: "inscrito",
           component: Detalhes,
-          props: route => ({ id: route.query.id })
+          props: (route) => ({ id: route.query.id }),
         },
         {
           path: "disparos",
-          component: Disparos
+          component: Disparos,
         },
         {
           path: "compositor",
-          component: Compositor
-        }
-      ]
-    }
-  ]
+          component: Compositor,
+        },
+      ],
+    },
+  ],
 });
 
 router.beforeEach((to, from, next) => {
@@ -124,5 +124,5 @@ router.beforeEach((to, from, next) => {
 }),
   new Vue({
     router,
-    render: h => h(App)
+    render: (h) => h(App),
   }).$mount("#app");

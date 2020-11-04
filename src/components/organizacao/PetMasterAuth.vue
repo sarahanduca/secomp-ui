@@ -66,7 +66,12 @@ export default {
         body: JSON.stringify(this.form)
       })
         .then(r => r.json(), false)
-        .catch(() => this.$router.push("/erro"));
+        .catch(e =>
+          this.$router.push({
+            path: "/erro",
+            query: { msg: e.toString() }
+          })
+        );
       this.fetching = false;
       if (response) {
         localStorage.setItem("token", response.auth_token);

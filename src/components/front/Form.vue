@@ -199,12 +199,20 @@ export default {
           }
         )
           .then(r => r.json())
-          .catch(() => this.$router.push("erro"));
+          .catch(e =>
+            this.$router.push({
+              path: "erro",
+              query: { msg: e.toString() }
+            })
+          );
         this.fetching = false;
         this.submited = true;
 
         if (this.response && this.response.status == "200") {
           this.show = false;
+          this.showTerm = false;
+        } else {
+          this.showTerm = false;
         }
       } else {
         this.showTerm = true;

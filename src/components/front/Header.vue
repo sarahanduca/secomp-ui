@@ -10,10 +10,10 @@
             evento que ocorre uma vez por ano na UEM (Universidade Estadual de
             Maringá) e é promovido pelo Departamento de Informática, o DIN. A
             SECOMP 2020 será a quarta edição do evento e acontecerá nos dias 16,
-            17, 18, 19 e 20 de novembro, totalmente gratuita e aberta para
-            qualquer um, serão dias composto por palestras, painéis de
-            discussões, campeonato de jogos, e sorteios, tudo isto com o intuito
-            de levar a tecnologia e informação a quem quiser participar. Você
+            17, 18, 19, 20, 21 e 22 de novembro, totalmente gratuita e aberta
+            para qualquer um. Serão dias compostos por palestras, painéis de
+            discussões, campeonato de jogos e sorteios, tudo isto com o intuito
+            de levar a tecnologia e a informação a quem quiser participar. Você
             pode conferir nosso cronograma aqui pelo site, mas caso faça
             inscrição, receberá um e-mail com mais detalhes sobre o evento e um
             link para participar do nosso servidor no Discord e assim ficar por

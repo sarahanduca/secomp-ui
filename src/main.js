@@ -47,7 +47,11 @@ const router = new VueRouter({
       component: Desinscreve,
       props: (route) => ({ id: route.query.id, token: route.query.token }),
     },
-    { path: "/erro", component: Erro },
+    {
+      path: "/erro",
+      component: Erro,
+      props: (route) => ({ msg: route.query.msg }),
+    },
     {
       path: "/login",
       component: Auth,
@@ -60,9 +64,12 @@ const router = new VueRouter({
               next();
             }
           })
-          .catch(() => {
-            next("/erro");
-          });
+          .catch((e) =>
+            next({
+              path: "/erro",
+              query: { msg: e.toString() },
+            })
+          );
       },
     },
     {
@@ -77,9 +84,12 @@ const router = new VueRouter({
               next("/login");
             }
           })
-          .catch(() => {
-            next("/erro");
-          });
+          .catch((e) =>
+            next({
+              path: "/erro",
+              query: { msg: e.toString() },
+            })
+          );
       },
       children: [
         {

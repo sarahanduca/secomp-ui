@@ -89,7 +89,7 @@ export default {
         {
           hora: "20h - 21h",
           palestra:
-            "Alan Lopes de Sousa Freitas (eureka) Case EurekaLabs: Aplicação de IA para reconhecimento de câncer de mama.",
+            "Alan Melo Clappis (Eureka): Case EurekaLabs - Aplicação de IA para reconhecimento de câncer de mama.",
         },
         {
           hora: "21h - 22h",

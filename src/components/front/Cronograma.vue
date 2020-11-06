@@ -126,7 +126,7 @@ export default {
         {
           hora: "20h - 21h",
           palestra:
-            "Pedro Rocha (aiqfome): aiqfome: de 30K a 2M de pedidos por mês, o que mudou?",
+            "Pedro Rocha (aiqfome): de 30K a 2M de pedidos por mês, o que mudou?",
         },
         {
           hora: "21h - 22h",

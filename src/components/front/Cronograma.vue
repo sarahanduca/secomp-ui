@@ -78,11 +78,11 @@ export default {
       fields: ["hora", "palestra"],
       d16: [
         {
-          hora: "18h - 18h30",
+          hora: "18h - 18h15",
           palestra: "Cerimônia de abertura",
         },
         {
-          hora: "18h30 - 20h",
+          hora: "18h15 - 20h",
           palestra:
             "Linnyer Beatrys Ruiz Aylon: Manna_team: a maior rede de ensino, pesquisa, extensão e inovação em IoT",
         },

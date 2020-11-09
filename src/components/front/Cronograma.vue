@@ -175,7 +175,7 @@ export default {
         {
           hora: "21h - 22h",
           palestra:
-            "Charbel Abbas e João Sabino (Sancor Seguros): Como implementar segurança continua no desenvolvimento de software",
+            "Charbel Abbas (Sancor Seguros) e João Sabino (Conviso): Como implementar segurança continua no desenvolvimento de software",
         },
       ],
       d21: [

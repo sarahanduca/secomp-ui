@@ -140,7 +140,7 @@ export default {
         {
           hora: "17h - 18h",
           palestra:
-            "Nelson Tobias: Coisas que o seu perfil do Linkedin não vai contar.",
+            "Nelson Tobias (TIG-Grupo Gazin): Coisas que o seu perfil do Linkedin não vai contar.",
         },
         {
           hora: "18h - 19h",

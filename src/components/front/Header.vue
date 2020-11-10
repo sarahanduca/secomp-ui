@@ -15,9 +15,16 @@
             painéis de discussões, campeonato de jogos e sorteios, tudo isto com
             o intuito de levar tecnologia e informação aos participantes.
             Confira a programação aqui pelo site. Quando você fizer sua
-            inscrição, irá receber um e-mail com detalhes sobre o evento e um
-            link para participar do nosso servidor no Discord e assim ficar por
-            dentro de qualquer atualização. Aproveite!
+            inscrição, irá receber um e-mail com mais detalhes sobre o evento e
+            convidamos você a participar do
+            <a
+              class="discord"
+              target="_blank"
+              href="https://discord.gg/8C96FdecKu"
+              >Discord</a
+            >
+            da IV SECOMP e ficar por dentro de qualquer atualização, ou tirar
+            suas dúvidas. Aproveite!
           </p>
         </b-col>
       </b-row>
@@ -98,6 +105,10 @@ export default {
 @import "../../assets/styles/custom.scss";
 * {
   font-family: $titulo;
+}
+.discord {
+  color: #296016;
+  text-decoration: underline;
 }
 h1 {
   font-size: 58px;

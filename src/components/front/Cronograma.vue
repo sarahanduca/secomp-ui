@@ -79,12 +79,12 @@ export default {
       d16: [
         {
           hora: "18h - 18h15",
-          palestra: "Cerimônia de abertura",
+          palestra: "Cerimônia de abertura.",
         },
         {
           hora: "18h15 - 20h",
           palestra:
-            "Linnyer Beatrys Ruiz Aylon: Manna_team: a maior rede de ensino, pesquisa, extensão e inovação em IoT",
+            "Linnyer Beatrys Ruiz Aylon: Manna_team: a maior rede de ensino, pesquisa, extensão e inovação em IoT.",
         },
         {
           hora: "20h - 21h",
@@ -94,34 +94,36 @@ export default {
         {
           hora: "21h - 22h",
           palestra:
-            "Rafael Bastos (Dumativa): A Carreira de Jogos no Brasil - O que é necessário saber pra trabalhar ou ter sua equipe de jogos",
+            "Rafael Bastos (Dumativa): A Carreira de Jogos no Brasil - O que é necessário saber pra trabalhar ou ter sua equipe de jogos.",
         },
       ],
       d17: [
         {
           hora: "18h - 19h",
-          palestra: "Prof. Dr. Anderson Rocha (IC-Unicamp/ IA)",
+          palestra:
+            "Prof. Dr. Anderson Rocha (IC-Unicamp/ IA):  Da pintura de cavernas à fotografia de buracos negros: a fantástica jornada humana e sua relação com o advento da inteligência artificial.",
         },
         {
           hora: "19h - 20h",
           palestra:
-            "Izabella Mundim Brito (Itaú Unibanco): Privacidade e Proteção de Dados na Prática: desafios da LGPD",
+            "Izabella Mundim Brito (Itaú Unibanco): Privacidade e Proteção de Dados na Prática: desafios da LGPD.",
         },
         {
           hora: "20h - 21h",
           palestra:
-            "Nathalia Borges (Dumativa):  As diferenças na programação de Negócios X Jogos",
+            "Nathalia Borges (Dumativa):  As diferenças na programação de Negócios X Jogos.",
         },
         {
           hora: "21h - 22h",
-          palestra: "Guilherme Puglia (Google)",
+          palestra:
+            "Guilherme Puglia (Google): Como se preparar para o mercado de tecnologia.",
         },
       ],
       d18: [
         {
           hora: "18h - 20h",
           palestra:
-            "Mesa Redonda - Camila Stefani Innecco (DB1), Estêvão Gondim (Mandic), Ricardo Henrique (Eureka), Vinicius Camargo (Amazon)",
+            "Mesa Redonda - Camila Stefani Innecco (DB1), Estêvão Gondim (Mandic), Ricardo Henrique (Eureka), Vinicius Camargo (Amazon): Mercado de Trabalho.",
         },
         {
           hora: "20h - 21h",
@@ -131,51 +133,56 @@ export default {
         {
           hora: "21h - 22h",
           palestra:
-            "Gustavo Zanoni: Reconhecimento de Padrões: do Início ao Fim",
+            "Gustavo Zanoni: Reconhecimento de Padrões: do Início ao Fim.",
         },
       ],
       d19: [
         {
+          hora: "17h - 18h",
+          palestra:
+            "Nelson Tobias: Coisas que o seu perfil do Linkedin não vai contar.",
+        },
+        {
           hora: "18h - 19h",
           palestra:
-            "Marcela Monteiro Montenegro Gallo (Mandic): IA - Hands-on na AWS",
+            "Marcela Monteiro Montenegro Gallo (Mandic): IA - Hands-on na AWS.",
         },
         {
           hora: "19h - 20h",
           palestra:
-            "Ricardo Satin (Matera): Modelos de recomendação para apoiar o processo de aprendizado ",
+            "Ricardo Satin (Matera): Modelos de recomendação para apoiar o processo de aprendizado.",
         },
         {
           hora: "20h - 21h",
           palestra:
-            "Thiago Moraes (aiqfome): da universidade para o mercado de trabalho",
+            "Thiago Moraes (aiqfome): da universidade para o mercado de trabalho.",
         },
         {
           hora: "21h - 22h",
           palestra:
-            "Mariana Soder: Um Overview dos Métodos Tradicionais e Modernos de PLN",
+            "Mariana Soder: Um Overview dos Métodos Tradicionais e Modernos de PLN.",
         },
       ],
       d20: [
         {
           hora: "18h - 19h",
           palestra:
-            "Giovanni Ferraz de Oliveira (Mandic): Cibersegurança no trabalho remoto",
+            "Giovanni Ferraz de Oliveira (Mandic): Cibersegurança no trabalho remoto.",
         },
         {
           hora: "19h - 20h",
           palestra:
-            "Ricardo Satin (Matera): LGPD e os cuidados do desenvolvedor",
+            "Ricardo Satin (Matera): LGPD e os cuidados do desenvolvedor.",
         },
         {
           hora: "20h - 21h",
           palestra:
-            "Felipe Cousin (aiqfome): aiqentrega: os desafios do lançamento de um novo produto no mercado",
+            "Felipe Cousin (aiqfome): aiqentrega: os desafios do lançamento de um novo produto no mercado.",
         },
         {
           hora: "21h - 22h",
           palestra:
-            "Charbel Abbas (Sancor Seguros) e João Sabino (Conviso): Como implementar segurança continua no desenvolvimento de software",
+            "Charbel Abbas (Sancor Seguros) e João Sabino (Conviso): Como implementar segurança continua no desenvolvimento de software.",
         },
       ],
       d21: [

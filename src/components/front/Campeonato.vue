@@ -10,7 +10,7 @@
         <b-col class="cards-list">
           <div class="card">
             <div class="card_image" @click="vava">
-              <img src="../../assets/valorant.png" />
+              <img src="../../assets/valorant.png" alt="valorant"/>
             </div>
             <div class="card_title"></div>
             <h2>VALORANT</h2>
@@ -19,7 +19,7 @@
         <b-col class="cards-list">
           <div class="card 2">
             <div class="card_image" @click="lolzinho">
-              <img src="../../assets/leagueoflegends.png" />
+              <img src="../../assets/leagueoflegends.png" alt="league of legends"/>
             </div>
             <div class="card_title"></div>
             <h2>LEAGUE OF LEGENDS</h2>
@@ -29,7 +29,7 @@
         <b-col class="cards-list">
           <div class="card 3">
             <div class="card_image" @click="csgo">
-              <img src="../../assets/csgo.png" />
+              <img src="../../assets/csgo.png" alt="cs:go"/>
             </div>
             <div class="card_title"></div>
             <h2>CS:GO</h2>
@@ -63,15 +63,28 @@
       </b-row>
       <b-row align-h="center" class="pb-5 mx-0 w-100">
         <b-col class="cards-list-award">
+          <div class="card 4">
+            <div class="card_image"><img src="../../assets/medalhaouroredbull.png" alt="medalha de ouro"/></div>
+            <div class="card_title"></div>
+            <div class="pt-5 podio text-center">
+              <h4>
+                1° Lugar: R$ 140,00 +<br>
+                4 Packs Red Bull
+              </h4>
+              <!-- <h4>2° Colocado - R$ <span>20,00</span> Steam</h4> -->
+            </div>
+          </div>
+        </b-col>
+        <b-col class="cards-list-award">
           <div class="card 5">
             <div class="card_image">
-              <img src="../../assets/Premio1.jpg" />
+              <img src="../../assets/medalhaprataredbull.png" alt="medalha de prata"/>
             </div>
             <div class="card_title"></div>
             <div class="pt-5 podio text-center">
               <h4>
-                Primeiro colocado: pack de 4 <br />
-                Segundo e terceiro: pack de 2
+                2° Lugar: R$ 60,00 +<br>
+                2 Packs Red Bull
               </h4>
               <!-- <h4>1° Colocado - R$ <span>50,00</span> Steam</h4> -->
             </div>
@@ -79,10 +92,13 @@
         </b-col>
         <b-col class="cards-list-award">
           <div class="card 4">
-            <div class="card_image"><img src="../../assets/breve.jpg" /></div>
+            <div class="card_image"><img src="../../assets/medalhabronzeredbull.png" alt="medalha de bronze"/></div>
             <div class="card_title"></div>
             <div class="pt-5 podio text-center">
-              <h4>A definir</h4>
+              <h4>
+                2° Lugar: R$ 20,00 +<br>
+                2 Packs Red Bull
+              </h4>
               <!-- <h4>2° Colocado - R$ <span>20,00</span> Steam</h4> -->
             </div>
           </div>
@@ -197,7 +213,7 @@ export default {
 .cards-list-award .card {
   margin: 30px auto;
   width: 300px;
-  height: 450px;
+  height: 400px;
   border-radius: 40px;
   box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
     -5px -5px 30px 7px rgba(0, 0, 0, 0.22);

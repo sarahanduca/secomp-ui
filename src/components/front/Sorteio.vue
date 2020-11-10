@@ -9,13 +9,13 @@
       <b-row class="cards-list w-100 mx-0">
         <b-col>
           <div class="card 1">
-            <div class="card_image"><img src="../../assets/lenda.jpg" /></div>
+            <div class="card_image"><img src="../../assets/lenda.jpg" alt="sorteio lenda do heroi"/></div>
           </div>
         </b-col>
         <b-col>
           <div class="card 2">
             <div class="card_image">
-              <img src="../../assets/sorteio.png" />
+              <img src="../../assets/adesivomandic.png" alt="sorteio adesivo mandic"/>
             </div>
           </div>
         </b-col>

@@ -145,17 +145,17 @@ export default {
         {
           hora: "18h - 19h",
           palestra:
-            "Marcela Monteiro Montenegro Gallo (Mandic): IA - Hands-on na AWS.",
+            "Marcela Monteiro Montenegro Gallo (Mandic): SageMaker: aprenda algoritmos e rotulação de dados com a Mandic.",
         },
         {
           hora: "19h - 20h",
           palestra:
-            "Ricardo Satin (Matera): Modelos de recomendação para apoiar o processo de aprendizado.",
+            "Thiago Moraes (aiqfome): da universidade para o mercado de trabalho.",
         },
         {
           hora: "20h - 21h",
           palestra:
-            "Thiago Moraes (aiqfome): da universidade para o mercado de trabalho.",
+            "Ricardo Satin (Matera): Modelos de recomendação para apoiar o processo de aprendizado.",
         },
         {
           hora: "21h - 22h",
@@ -172,12 +172,12 @@ export default {
         {
           hora: "19h - 20h",
           palestra:
-            "Ricardo Satin (Matera): LGPD e os cuidados do desenvolvedor.",
+            "Felipe Cousin (aiqfome): aiqentrega: os desafios do lançamento de um novo produto no mercado.",
         },
         {
           hora: "20h - 21h",
           palestra:
-            "Felipe Cousin (aiqfome): aiqentrega: os desafios do lançamento de um novo produto no mercado.",
+            "Ricardo Satin (Matera): LGPD e os cuidados do desenvolvedor.",
         },
         {
           hora: "21h - 22h",

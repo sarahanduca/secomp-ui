@@ -145,7 +145,7 @@ export default {
         {
           hora: "18h - 19h",
           palestra:
-            "Marcela Monteiro Montenegro Gallo (Mandic): SageMaker: aprenda algoritmos e rotulação de dados com a Mandic.",
+            "Marcela Monteiro Montenegro Gallo (Mandic): Detecção de objetos nas nuvens utilizando AWS SageMaker: aprenda algoritmos e rotulação de dados com a Mandic",
         },
         {
           hora: "19h - 20h",

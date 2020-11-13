@@ -64,7 +64,7 @@
       <b-row align-h="center" class="pb-5 mx-0 w-100">
         <b-col class="cards-list-award">
           <div class="card 4">
-            <div class="card_image"><img src="../../assets/medalhaouro.png" alt="medalha de ouro"/></div>
+            <div class="card_image"><img src="../../assets/medalhadeouro.png" alt="medalha de ouro"/></div>
             <div class="card_title"></div>
             <div class="pt-5 podio text-center">
               <h4>
@@ -78,7 +78,7 @@
         <b-col class="cards-list-award">
           <div class="card 5">
             <div class="card_image">
-              <img src="../../assets/medalhaprata.png" alt="medalha de prata"/>
+              <img src="../../assets/medalhadeprata.png" alt="medalha de prata"/>
             </div>
             <div class="card_title"></div>
             <div class="pt-5 podio text-center">
@@ -92,7 +92,7 @@
         </b-col>
         <b-col class="cards-list-award">
           <div class="card 4">
-            <div class="card_image"><img src="../../assets/medalhabronze.png" alt="medalha de bronze"/></div>
+            <div class="card_image"><img src="../../assets/medalhadebronze.png" alt="medalha de bronze"/></div>
             <div class="card_title"></div>
             <div class="pt-5 podio text-center">
               <h4>

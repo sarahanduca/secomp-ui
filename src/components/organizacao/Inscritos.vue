@@ -13,6 +13,7 @@
           placeholder="Pesquisar"
         ></b-form-input>
       </b-form-group>
+      <p class="text-center text-light">Inscritos: <span>{{ inscritos_count }}</span></p>
     </b-col>
     <b-col class="px-0 d-md-block ">
       <b-form-group class="my-2 mx-2 d-md-none">
@@ -20,7 +21,7 @@
           id="input-search-mobile"
           v-model="filter"
           type="text"
-          placeholder="Pesquisar"
+          :placeholder="'Pesquisar entre ' + inscritos_count + ' inscritos'"
         ></b-form-input>
       </b-form-group>
       <b-overlay variant="dark" :show="isBusy" spinner-variant="light">
@@ -123,7 +124,11 @@ export default {
       });
     }
   },
-  computed: {}
+  computed: {
+    inscritos_count() {
+      return this.inscritos.length;
+    }
+  }
 };
 </script>
 

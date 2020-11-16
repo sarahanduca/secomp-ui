@@ -6,7 +6,7 @@
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav class="ml-auto text-center">
+      <b-navbar-nav class="mx-auto text-center">
         <b-nav-item to="/" @click="scroll('#div-cronograma')">
           Cronograma
         </b-nav-item>
@@ -14,11 +14,6 @@
           >Campeonato</b-nav-item
         >
         <b-nav-item to="/" @click="scroll('#sorteio')">Sorteio</b-nav-item>
-      </b-navbar-nav>
-      <b-navbar-nav class="ml-auto">
-        <b-button variant="dark" v-b-modal.modal-inscricao to="/inscricao"
-          >Inscreva-se</b-button
-        >
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>

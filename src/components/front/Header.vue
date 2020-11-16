@@ -1,7 +1,7 @@
 <template>
   <div id="">
     <b-container class="w-100" id="evento">
-      <b-row class="w-100 mx-0">
+      <b-row class="w-100 mx-0 pb-4">
         <b-col id="desc">
           <h1 class="mb-5">O Evento</h1>
 
@@ -28,37 +28,6 @@
           </p>
         </b-col>
       </b-row>
-      <b-row
-        align-h="center"
-        class="d-flex d-lg-none w-100 mt-3 mx-0 text-center"
-        v-if="!expired"
-      >
-        <b-col>
-          <b-button
-            size="lg"
-            variant="success"
-            v-b-modal.modal-inscricao
-            to="/inscricao"
-            >Inscreva-se</b-button
-          >
-        </b-col>
-      </b-row>
-      <b-row align-h="end" class="w-100 mx-0 pt-4">
-        <b-col class="mr-5">
-          <h2 class="text-right" v-if="!expired">
-            FALTAM <span>{{ daysLeft }}</span> DIA<span
-              class="light"
-              v-if="daysLeft != 1"
-              >S</span
-            >
-            E <span>{{ hoursLeft }}</span> HORA<span
-              class="light"
-              v-if="hoursLeft != 1"
-              >S</span
-            >
-          </h2>
-        </b-col>
-      </b-row>
     </b-container>
     <svg
       id="top-section-border"
@@ -75,28 +44,9 @@
 export default {
   name: "Header",
   data() {
-    return {
-      secomp: new Date(1605495600000),
-      hours: "2",
-    };
+    return {};
   },
-  computed: {
-    daysLeft() {
-      const today = new Date().getTime();
-      const delta = this.secomp - today;
-
-      return Math.floor(delta / 86_400_000);
-    },
-    hoursLeft() {
-      const today = new Date().getTime();
-      const delta = this.secomp - today;
-
-      return Math.floor((delta % 86_400_000) / 3_600_000);
-    },
-    expired() {
-      return this.secomp < Date.now();
-    },
-  },
+  computed: {},
 };
 </script>
 

@@ -2,10 +2,6 @@
   <div class="w-100">
     <NavBar />
 
-    <b-modal id="modal-inscricao" title="Inscrição" hide-footer scrollable>
-      <router-view></router-view>
-    </b-modal>
-
     <Event />
 
     <Cronograma />
@@ -15,7 +11,6 @@
     <Sorteio id="sorteio" />
 
     <Rodape />
-    <!-- <Submit /> -->
   </div>
 </template>
 
@@ -24,7 +19,6 @@ import NavBar from "./NavBar.vue";
 import Event from "./Header.vue";
 import Cronograma from "./Cronograma.vue";
 import Campeonato from "./Campeonato.vue";
-// import Submit from "./Submit.vue"
 import Sorteio from "./Sorteio.vue";
 import Rodape from "./Rodape.vue";
 
@@ -36,9 +30,9 @@ export default {
     Cronograma,
     Campeonato,
     Sorteio,
-    Rodape
+    Rodape,
     // Submit,
-  }
+  },
 };
 </script>
 

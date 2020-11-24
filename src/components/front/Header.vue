@@ -26,7 +26,19 @@
             da IV SECOMP e ficar por dentro de qualquer atualização, ou tirar
             suas dúvidas. Aproveite!
           </p>
+          <p>
+            A SECOMP será transmitida no youtube e na twitch, você pode
+            acessá-los abaixo
+          </p>
         </b-col>
+      </b-row>
+      <b-row class="w-100 mx-0 my-2" align-h="end" align-v="center">
+        <a href="https://www.twitch.tv/petinformaticauem">
+          <b-img src="../../assets/twitch.svg" width="80px" class="mr-4" />
+        </a>
+        <a href="https://www.youtube.com/channel/UC1CqEvbKvvduWi5RuMoRR9w">
+          <b-img src="../../assets/youtube.svg" width="80px" class="mr-4" />
+        </a>
       </b-row>
     </b-container>
     <svg

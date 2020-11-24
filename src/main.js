@@ -8,7 +8,6 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 
 import Auth from "./components/organizacao/PetMasterAuth.vue";
 import Secomp from "./components/front/Secomp.vue";
-// import Form from "./components/front/Form.vue";
 import PetMaster from "./components/organizacao/PetMaster.vue";
 import Erro from "./components/organizacao/Erro.vue";
 import Inscritos from "./components/organizacao/Inscritos.vue";

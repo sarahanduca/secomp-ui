@@ -21,12 +21,12 @@ npm run build
 
 ## Configurações
 Variáveis de Ambiente:
- ````bash
+ ````
   VUE_APP_API_URL: Endereço para a API da SECOMP - somente usado nas telas da organização
   Arquivo: .env
  ````
 Ponto de montagem em subpath:
- ````bash
+ ````
   publicPath: No build de produção monta o app no subpath /secomp/
   Arquivo: vue.config.js
   
@@ -34,7 +34,7 @@ Ponto de montagem em subpath:
   Arquivo: src/main.js
 ````
 Upgrade de protocolo no client:
- ````javascript
+ ````
   router.beforeEach: Devido a uma limitação com os servidores da UEM o upgrade header não funciona corretamente. Logo, como uma solução simples, usamos o VueRouter para mandar todas as requisições para HTTPS;
   Arquivo: src/main.js
   

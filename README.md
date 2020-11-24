@@ -33,6 +33,13 @@ Ponto de montagem em subpath:
   base: (VueRouter) também usado para montar as rotas relativas ao subpath /secomp/
   Arquivo: src/main.js
 ````
+Upgrade de protocolo no client:
+ ````javascript
+  router.beforeEach: Devido a uma limitação com os servidores da UEM o upgrade header não funciona corretamente. Logo, como uma solução simples, usamos o VueRouter para mandar todas as requisições para HTTPS;
+  Arquivo: src/main.js
+  
+  OBS: Ao executar o projeto é recomendado desabilitar essa guarda de navegação, caso constrário você será redirecionado para o site em .env
+````
 
 ## Licença
 

@@ -22,7 +22,7 @@ npm run build
 ## Configurações
 Variáveis de Ambiente:
  ````bash
-  VUE_APP_API_URL: Endereço para a API de SECOMP - somente usado nas telas da organização
+  VUE_APP_API_URL: Endereço para a API da SECOMP - somente usado nas telas da organização
   Arquivo: .env
  ````
 Ponto de montagem em subpath:

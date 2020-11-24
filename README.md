@@ -6,7 +6,7 @@ Front-end da [IV SECOMP UEM](https://din.uem.br/secomp), feito com muito carinho
 Dependências de build
   - Node.js
   
-Dentro da pasta do projeto instale as dependências de run-time:
+Dentro da pasta do projeto instale as dependências de runtime:
 ````bash
 npm install
 ````

@@ -45,4 +45,4 @@ Upgrade de protocolo no cliente:
 
 ## Licença
 
-Código livre distribuído sob licença BDS-3-Clause
+Código livre distribuído sob licença BSD-3-Clause

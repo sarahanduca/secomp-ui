@@ -1,6 +1,6 @@
 # secomp-ui
 
-Front-end da [IV SECOMP UEM](https://din.uem.br/secomp), feito com muito carinho em Vue.js 
+Front-end da [IV SECOMP UEM](https://www.din.uem.br/secomp), feito com muito carinho em Vue.js 
 
 ## Build
 Dependências de build
